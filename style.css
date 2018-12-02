@@ -79,12 +79,16 @@ body {
 
 }
 
+#pointer {
+  cursor: pointer;
+}
+
 .nav_estilo {
     background-color: rgba(210,210,210, 0.88);
 }
 
 .item_style {
-        /*font-family: ;*/
+    /*font-family: ;*/
     color: black;
     margin-right: 2em;
 }
