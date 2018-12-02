@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #00b55b;
+}
+
+.title {
+	font-size: 5em;
+	font-weight: bold;
+	color:  black;
+	align-content: center;
+	text-align: center;
+}
+
+.send {
+	background-color: #14AB00;
+	background: #14AB00;
+	width: 20%;
+	font-weight: bold;
+}
