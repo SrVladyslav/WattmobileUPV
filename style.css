@@ -60,6 +60,7 @@ body {
     height: 100%;
     position: relative;
     margin:0;
+    margin-top: 0 !important;
 }
 
 .spsimg {
@@ -67,8 +68,9 @@ body {
   z-index:1; 
   width:40em; 
   height:40em;
-  align-content: center;
   vertical-align: middle;
+  top: 50%;
+  left: 30%;
 }
 .gallery_style {
     background: #2f2f2f;
@@ -155,6 +157,7 @@ body {
     font-family: Impact;
     font-weight: bold;
     color: white;
+    top:50% !important;
 }
 
 .title_style {
