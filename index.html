@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<title>WattMobile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--OUR EVENTS END-->
+	<script src= "http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--CALENDAR SCRIPTS-->
+	<script type="text/javascript" src="js/caleandar.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css"> 
@@ -14,6 +21,16 @@
 	<script type="text/javascript" src="js/window-scroll.js"></script>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="WATTMOBILE UPV - Grupo de estudiantes en un proyecto de transformacion de un coche de combustion a un electrico" name="description">
+  <!--Slider-->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+  	$(window).load(function() {
+	    $('.flexslider').flexslider();
+	  });
+	</script>
+	<!--Slider END-->
 	<!--Fav-->
   <link href="img/logo/logo.png" rel="shortcut icon">
 	<!--
@@ -198,9 +215,30 @@
 
 	<!--GALLERY-->
 	<div class="container-fluid">
-		<div class="gallery_style row" id="gallery">
-				<div class="col-xs-12 col-sm-12">
-								GALLERY
+		<div class="gallery_style" id="gallery">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+								<div class="flexslider">
+									<ul class="slides">
+										<li>
+											<img src="img/gallery/car.PNG" alt="">
+											<section class="flex-caption"></section>
+										</li>
+										<li>
+											<img src="img/gallery/hero1.jpeg" alt="">
+											<section class="flex-caption"></section>
+										</li>
+										<li>
+											<img src="img/gallery/car.PNG" alt="">
+											<section class="flex-caption"></section>
+										</li>
+										<li>
+											<img src="img/gallery/hero1.jpeg" alt="">
+											<section class="flex-caption"></section>
+										</li>
+									</ul>
+								</div>
+					</div>
 				</div>
 		</div>
 	</div>
@@ -244,11 +282,5 @@
     </div>
   </footer>
   <!--/.FOOTER-END-->
-	<!--OUR EVENTS END-->
-	<script src= "http://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!--CALENDAR SCRIPTS-->
-	<script type="text/javascript" src="js/caleandar.js"></script>
-	<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
 </body>
 </html>

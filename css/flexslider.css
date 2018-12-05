@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'flexslider-icon';
+	src: url('../fonts/flexslider-icon.eot');
+	src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff')
+	format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'),url('../fonts/flexslider-icon.svg#flexslider-icon') format('');
+	font-weight: normal;
+	font-style: normal;	
+}
+img {
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider {
+	width: 100%;
+	position: relative;
+}
+
+.slides {
+	overflow: hidden;
+}
+
+.slides img {
+	width: 100%;
+}
+
+/**BUTTONS OF SLIDES**/
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flex-control-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	margin: 0 6px;
+	margin-top: .5em;	
+}
+
+.flex-control-nav li a {
+	display: block;
+	background: #777777;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	text-indent: -9999px;
+}
+
+.flex-control-nav li a:hover {
+	background: black;
+}
+
+.flex-control-nav li a.flex-active {
+	background: black;
+}
+
+/**ARROWS**/
+.flex-direction-nav a {
+	display:block;
+	text-decoration:none;
+	position: absolute;
+	top: 50%;
+	z-index: 999; /**can appear on top of the img**/
+	width: 40px;
+	height: 45px;
+	overflow: hidden;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0;
+}
+
+.flex-direction-nav .flex-next {
+	right: 0;
+}
+
+.flex-direction-nav a:before {
+	font-family: 'flexslider-icon';
+	font-size: 40px;
+	display: inline-block;
+	content: '\f001';
+	color: #fff;
+	text-shadow: 1px 1px rgba(255,255,255,0.3);
+}
+
+.flex-direction-nav a.flex-next:before {
+	content: '\f002';
+}
