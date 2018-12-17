@@ -58,7 +58,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn  btn-lg send">Submit</button>
+                                <button type="submit" class="btn  btn-lg send" onclick="sendMail();">Submit</button>
                             </div>
                         </div>
                     </fieldset>
@@ -66,6 +66,33 @@
             </div>
         </div>
     </div>
+    <!--MAIL END-->
+    <script>
+        function sendMail() {
+            $.ajax({
+              type: 'POST',
+              url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+              data: {
+                'key': 'YOUR API KEY HERE',
+                'message': {
+                  'from_email': '#email',
+                  'to': [
+                      {
+                        'email': 'vlama@inf.upv.es',
+                        'name': 'RECIPIENT NAME (OPTIONAL)',
+                        'type': 'to'
+                      }
+                    ],
+                  'autotext': 'true',
+                  'subject': 'YOUR SUBJECT HERE!',
+                  'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+                }
+              }
+             }).done(function(response) {
+               console.log(response); // if you're into that sorta thing
+             });
+        }
+    </script>
     <!--OUR EVENTS END-->
 		<script src= "http://code.jquery.com/jquery-latest.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
