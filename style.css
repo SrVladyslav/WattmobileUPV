@@ -99,9 +99,9 @@ body {
 
 .spsimg_ETSID {
   position:relative !important;
-  width:50% !important; 
-  height:50% !important;
-  left: 25%;
+  width:60% !important; 
+  height:60% !important;
+  left: 20%;
 }
 
 #sponsors {
@@ -181,22 +181,22 @@ body {
     background-size: cover;
 }
 
-.home_style {
-    text-align: center;
-}
-
 .our_events_style {
     background-color: white;
     height: 50em;
 }
 
 .title_main_style {
+    position: relative;
+    overflow: hidden;
     font-size: 10em;
     font-family: Impact;
     font-weight: bold;
     color: white;
-    top:50% !important;
+    text-align: center;
+    top: 1.5em;
 }
+
 
 .title_style {
     font-size: 5em;
