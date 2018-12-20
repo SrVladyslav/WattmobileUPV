@@ -5,6 +5,12 @@ html{
 body {
     /*margin: 0em auto;*/
     height: 100%;
+    /**no se admite seleccionar para copiar*/
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
 }
 /**---------------general style*-------------**/
 
@@ -195,6 +201,14 @@ body {
     color: white;
     text-align: center;
     top: 1.5em;
+    /*top: 50vw;*/
+    font-family: 'Righteous', cursive;
+    /**animation**/
+    -webkit-animation-name: title_color; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    animation-name: title_color;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -422,6 +436,23 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
     }
 }
 
+/**animation of the title**/
+
+@-webkit-keyframes title_color {
+  0%   {color: #00b537;}
+  25%  {color: #0bdc1e;}
+  50%  {color: #0c8417;}
+  100% {color: #4fc62f;}
+}
+
+@keyframes title_color {
+  0%   {color: #00b537;}
+  25%  {color: #0bdc1e;}
+  50%  {color: #0c8417;}
+  100% {color: #4fc62f;}
+}
+
+/**responsive**/
 @media only screen and (max-width: 480px) {
     .contact_description_style {
       font-size: 1em;
