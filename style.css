@@ -6,7 +6,6 @@ body {
     /*margin: 0em auto;*/
     height: 100%;
     /**no se admite seleccionar para copiar*/
-    pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
