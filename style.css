@@ -16,6 +16,46 @@ body {
 .description_style {
   margin-left: 1.5em !important;
 }
+/**---------------callout--------------------**/
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 2em;
+  margin-left: 20px;
+  max-width: 350px;
+}
+
+/* Callout header */
+.callout-header {
+  padding: 25px 15px;
+  background: #0E6103;
+  font-size: 30px;
+  color: white;
+}
+
+/* Callout container/body */
+.callout-container {
+  padding: 15px;
+  background-color: white;
+  color: black
+  font-weight: bold;
+  align-content: justify;
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Change color on mouse-over */
+.closebtn:hover {
+  color: lightgrey;
+}
 
 /**------------------------------------------**/
 
