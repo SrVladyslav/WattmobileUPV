@@ -58,6 +58,45 @@ body {
   color: lightgrey;
 }
 
+/**-------------------scroll bar--------------**/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-moz-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 /**------------------------------------------**/
 
 .social_net_style {
@@ -238,6 +277,11 @@ body {
 .our_events_style {
     background-color: white;
     height: 50em;
+}
+
+.next_competition {
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .title_main_style {
@@ -602,6 +646,9 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
     .contact_logo {
       height: 30%;
       width: 30%;
+    }
+    .next_competition {
+      font-size: 1em;
     }
 }
 
