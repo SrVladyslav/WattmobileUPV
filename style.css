@@ -305,7 +305,8 @@ body {
     animation-name: title_color;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    top: 30vh;
+    top: 15vh; /**navidad**/
+    /**original>> top: 30vh;**/
 }
 
 .title_lmain_mov {
