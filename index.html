@@ -30,6 +30,13 @@
   	$(window).load(function() {
 	    $('.flexslider').flexslider();
 	  });
+	  //DETECTS THE POSITION ON THE SCREEN
+	  window.onscroll = function() {aboutUsScroll()};
+		function aboutUsScroll() {
+		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+		    document.getElementById("myImg").className = "slideUp";
+		  }
+		}
 	</script>
 	<!--Slider END-->
 	<!--Fav-->
@@ -100,6 +107,12 @@
 		</div>
 	</div>
 	<!--HOME END-->
+	
+	<!--TRAILER-->
+	<div class="videoWrapper">
+    <iframe width="560" height="349" src="https://www.youtube.com/embed/dIeD56BnI-o?showinfo=0&loop=1&autoplay=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<!--TRAILER-->
 
 	<!--ABOUT US-->
 	<div class="container-fluid about_us_style" id="about">
@@ -161,7 +174,7 @@
 			<br><br>
 	</div>
 	<!--ABOUT US END-->
-
+	<!---->
 	
 
 	<!--CONTACT-->
@@ -193,8 +206,8 @@
 							</div>
 					</div>
 			</div>
+			<!--SOCIAL NETWORKS
 			<div class="row">
-				<!--SOCIAL NETWORKS-->
             <ul class="socials">
               <li class="facebook">
                 <a href="https://es-es.facebook.com/Wattmobile-UPV-750063795162288/" data-hover="Facebook">Facebook</a>
@@ -204,13 +217,13 @@
               </li>
              <!-- <li class="twitter">
                 <a href="#" data-hover="Twitter">Twitter</a>
-              </li>
+              </li>-->
               <!--<li class="youtube">
                 <a href="#" data-hover="Youtube">Youtube</a>
               </li>-->
-            </ul>
-        <!--SOCIAL NETWORKS END-->
+            <!--</ul>
 			</div>
+			SOCIAL NETWORKS END-->
 	</div>
 	<!--CONTACT END-->
 
@@ -247,12 +260,12 @@
 
 	<!--GALLERY-->
 	<div class="container-fluid gallery_style" id="gallery">
-			<div class="row">
+			<div class="row contained">
 				<div class="col-xs-12 col-sm-12">
 						<h1 class="title_style" style="color:white;">GALLERY</h1>			
 				</div>
 			</div>
-			<div class="row">
+			<div class="row contained">
 				<div class="col-xs-12 col-sm-12">
 					<div class="flexslider">
 							<ul class="slides">
