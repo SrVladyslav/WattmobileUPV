@@ -18,6 +18,7 @@ body {
 }
 /**---------------callout--------------------**/
 .callout {
+  font-family: 'Righteous', cursive;
   position: fixed;
   bottom: 35px;
   right: 2em;
@@ -243,7 +244,6 @@ body {
     position: relative;
     overflow: hidden;
     font-size: 10em;
-    font-family: Impact;
     font-weight: bold;
     color: white;
     text-align: center;
