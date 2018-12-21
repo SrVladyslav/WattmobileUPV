@@ -215,7 +215,7 @@ body {
     animation-name: title_color;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    top: 1.5em;
+    top: 30vh;
 }
 
 .title_lmain_mov {
