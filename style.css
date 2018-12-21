@@ -13,6 +13,10 @@ body {
 }
 /**---------------general style*-------------**/
 
+.font_WM {
+  font-family: 'Righteous', cursive;
+}
+
 .description_style {
   margin-left: 1.5em !important;
 }
@@ -131,6 +135,7 @@ body {
 
 .contact_style_text {
   font-size: 1em;
+  font-family: 'Righteous', cursive;
 }
 
 .contact_logo {
@@ -268,12 +273,13 @@ body {
 
 #home {
     background: url(img/people/hero2.jpeg)no-repeat center center fixed;
+    position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
+/**---------------our events------------------*/
 .our_events_style {
     background-color: white;
     height: 50em;
@@ -312,7 +318,7 @@ body {
 
 .title_style {
     font-size: 5em;
-    font-family: Arial;
+    font-family: 'Righteous', cursive;
     font-weight: bold;
     margin:0.5em;
 }
@@ -322,6 +328,7 @@ body {
     color: black;
     font-size: 2em;
     font-weight: bold;
+    font-family: 'Righteous', cursive;
 }
 
 .trailer_style {
@@ -348,12 +355,12 @@ body {
 
 .description_style {
     font-size: 2.5em;
-    font-family: Arial;
+    font-family: 'Righteous', cursive;
     font-weight: bold;
 }
 .subtitle_style {
     font-size: 3em;
-    font-family: Arial;
+    font-family: 'Righteous', cursive;
     font-weight: bold;
 }
 
@@ -502,10 +509,6 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
   color: #636363;
 }
 
-/**---------------our events------------------*/
-.our_events_style {
-  
-}
 
 /**animation of the title**/
 
