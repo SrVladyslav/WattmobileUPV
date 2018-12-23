@@ -649,9 +649,6 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
     .title_main_style {
       font-size: 2.2em;
     }
-    #home {
-      height: 50vh;
-    }
 }
 
 @media only screen and (max-width: 360px) {
