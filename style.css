@@ -273,7 +273,7 @@ body {
 
 #home {
     background: url(img/people/hero2.jpeg) no-repeat center center fixed;
-    position: relative;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
