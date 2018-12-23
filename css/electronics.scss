@@ -1,0 +1,17 @@
+.home_electronics_style {
+	position: relative;
+  overflow: hidden;
+  font-size: 10em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  /**animation**/
+
+  -webkit-animation-name: title_color; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
+  animation-name: title_color;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  top: 30vh;
+}

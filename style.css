@@ -203,8 +203,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width:auto;
+    background-size: 100% auto;
     height: auto;
-    display: inline-block;
+    
 }
 
 .sponsors_desc {
@@ -272,13 +273,30 @@ body {
 }
 
 #home {
-    background: url(img/people/hero2.jpeg)no-repeat center center fixed;
+    background: url(img/people/hero2.jpeg) no-repeat center center fixed;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+/**landing page electronics**/
+#home_electronics {
+    height: 100vh;
+    background: url(img/disciplines/electronics/electronics-main.jpeg) no-repeat center center fixed;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home_electronics_style {
+  top: 30vh;
+}
+
+
 /**---------------our events------------------*/
 .our_events_style {
     background-color: white;
