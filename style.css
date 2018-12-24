@@ -12,7 +12,6 @@ body {
     -ms-user-select:none;
 }
 /**---------------general style*-------------**/
-
 .font_WM {
   font-family: 'Righteous', cursive;
 }
@@ -254,6 +253,10 @@ body {
 
 .nav_estilo {
     background-color: rgba(210,210,210, 0.88);
+}
+
+.la {
+  background-color: black;
 }
 
 .item_style {
