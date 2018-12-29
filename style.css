@@ -17,6 +17,10 @@ body {
   font-family: 'Righteous', cursive;
 }
 
+.item_style a{
+  /*font-size: 15px;*/
+}
+
 .description_style {
   margin-left: 1.5em !important;
 }
@@ -263,7 +267,7 @@ body {
 .item_style {
     /*font-family: ;*/
     color: black;
-    margin-right: 2em;
+    margin-right: 2em !important;
 }
 .logo_style {
     width: 2em;
@@ -287,7 +291,7 @@ body {
 /**landing page electronics**/
 #home_electronics {
     height: 100vh;
-    background: url(img/disciplines/electronics/electronics-main.jpeg) no-repeat center center fixed;
+    background: url(img/gallery/hero1.jpeg) no-repeat center center fixed;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
