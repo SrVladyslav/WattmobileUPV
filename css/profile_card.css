@@ -5,7 +5,7 @@ body {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  min-width: 250px;
+  min-width: 280px;
   margin: auto;
   margin-bottom: 1em;
   text-align: center;
@@ -64,4 +64,11 @@ button:hover, a:hover {
 .profiles {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 400px) {
+  .flex {
+    width: 100%;
+    margin-left: auto;
+  }
 }

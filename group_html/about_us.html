@@ -5,8 +5,12 @@
 	<title>WattMobile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+	<link rel="stylesheet" type="text/css" href="../css/navbar_style.css">
 	<!--Christmas font-->
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 	<!--OUR EVENTS END-->
@@ -15,11 +19,15 @@
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../style.css"> 
-	<link rel="stylesheet" type="text/css" href="../css/electronics.scss">
+	<!--Calendar styles-->
+  <link rel="stylesheet" href="../css/demo.css"/>
+  <link rel="stylesheet" href="../css/theme.css"/>
   <!--Calendar styles end-->
 	<script type="text/javascript" src="../js/window-scroll.js"></script>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="WATTMOBILE UPV - Grupo de estudiantes en un proyecto de transformacion de un coche de combustion a un electrico" name="description">
+  <!--EFFECTS-->
+  <link rel="stylesheet" type="text/css" href="../css/effects.scss">
   <!--Slider-->
   <link rel="stylesheet" href="../css/flexslider.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -29,15 +37,25 @@
 	    $('.flexslider').flexslider();
 	  });
 	  //DETECTS THE POSITION ON THE SCREEN
-	  window.onscroll = function() {aboutUsScroll()};
+	  /*window.onscroll = function() {aboutUsScroll()};
 		function aboutUsScroll() {
 		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
 		    document.getElementById("myImg").className = "slideUp";
 		  }
-		}
+		}*/
+	</script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $(".nav_estilo").addClass('la');
+        }else{
+            $(".nav_estilo").removeClass('la');
+        }
+		    });
+		});*/
 	</script>
 	<!--Slider END-->
-
 	<!--Profile card-->
 	<link rel="stylesheet" type="text/css" href="../css/profile_card.css">
 	<script type="../js/profile_card.js"></script>
@@ -114,9 +132,70 @@
 	</div>
 	<!--HOME END-->
 
-	<!--MEMBERS-->
-	<div class="members_style container-fluid">
+	<!-- electronics MEMBERS-->
+	<div class="members_style container-fluid" id="electronics_team">
 		<h1 class="title_style"> Electronics team.</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 about_us_style_description">
+					<p>
+							Whe are the champions!!!
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div style="align-content: center;">
+			<div class="flex" style="height: auto;">
+				<div class="card">
+				  <img src="../img/disciplines/electronics/vlad.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>Vladyslav</h1>
+				  <h1>Mazurkevych</h1>
+				  <p class="title">Programmer,PCB responsible.</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+		</div>
+		</div>
+		<br>
+		</div>
+	<!--MEMBERS END-->
+
+	<!--Marketing MEMBERS-->
+	<div class="members_style container-fluid" id="marketing_team">
+		<h1 class="title_style"> Marketing team.</h1>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 about_us_style_description">
@@ -134,7 +213,129 @@
 				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
 				  <h1>nombre</h1>
 				  <h1>apellido</h1>
+				  <p class="title">team responsible.</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
 				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+		</div>
+		</div>
+		<br>
+		</div>
+	<!--MEMBERS END-->
+
+	<!-- structure MEMBERS-->
+	<div class="members_style container-fluid" id="structure_team">
+		<h1 class="title_style"> Structure team.</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 about_us_style_description">
+					<p>
+							Whe are the champions!!!
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div style="align-content: center;">
+			<div class="flex" style="height: auto;">
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellidos</h1>
+				  <p class="title">team responsible.</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellido</h1>
+				  <p class="title">Battery, Lider</p>
+				  <p>Polytechnic University of Valencia</p>
+				  <a href="#"><i class="fa fa-linkedin"></i></a> 
+				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
+				</div>
+		</div>
+		</div>
+		<br>
+		</div>
+	<!--MEMBERS END-->
+
+	<!--motor_and_battery MEMBERS-->
+	<div class="members_style container-fluid" id="motor">
+		<h1 class="title_style"> Motor & battery team</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 about_us_style_description">
+					<p>
+							Whe are the champions!!!
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div style="align-content: center;">
+			<div class="flex" style="height: auto;">
+				<div class="card">
+				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
+				  <h1>nombre</h1>
+				  <h1>apellidos</h1>
+				  <p class="title">group responsible.</p>
 				  <p>Polytechnic University of Valencia</p>
 				  <a href="#"><i class="fa fa-linkedin"></i></a> 
 				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
