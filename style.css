@@ -11,6 +11,7 @@ body {
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select:none;
+    font-family: 'Roboto', sans-serif;
 }
 /**---------------general style*-------------**/
 .font_WM {
@@ -126,6 +127,7 @@ body {
 
 .about_us_style_description {
     background-color: #f5f5f5;/*#dddddd*/
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -139,7 +141,8 @@ body {
 
 .contact_style_text {
   font-size: 1em;
-  font-family: 'Righteous', cursive;
+  /*font-family: 'Righteous', cursive;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact_logo {
@@ -151,7 +154,7 @@ body {
     margin: 0.5em;
     vertical-align: middle;
     align-items: left;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     font-size: 3em;
 }
 
@@ -232,6 +235,7 @@ body {
     font-weight: bold;
     color: black;
     margin-top: 0.25em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .group_about_style {
@@ -273,6 +277,13 @@ body {
     width: 2em;
     height: 2em;
     margin-top: -0.5em;
+}
+
+hr{
+    margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 #home {
@@ -330,8 +341,8 @@ body {
     animation-name: title_color;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    top: 15vh; /**navidad**/
-    /**original>> top: 30vh;**/
+    /**top: 15vh; navidad**/
+   top: 30vh; /*original*/
 }
 
 .title_lmain_mov {
@@ -381,12 +392,14 @@ body {
 
 .description_style {
     font-size: 2.5em;
-    font-family: 'Righteous', cursive;
+    /*font-family: 'Righteous', cursive;*/
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 .subtitle_style {
     font-size: 3em;
     font-family: 'Righteous', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: bold;
 }
 
