@@ -21,6 +21,24 @@ img {
     height: 100%; 
     width: auto; 
 } 
+.barra {
+  background-color: black;
+  position: fixed;
+}
+
+#navbarf {
+  position: fixed;
+  width: 100vw;
+}
+
+.navbar-toggler-icon {
+  color: white!important;
+}
+
+.nav-link {
+  color: white!important;
+  font-family: 'Righteous', cursive;
+}
 
 .description_style {
   margin-left: 1.5em !important;
@@ -230,8 +248,8 @@ img {
 }
 
 .contact_logo {
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 80%;
 }
 
 .contact_description_style {
@@ -268,21 +286,18 @@ img {
   /**z-index:1;**/ 
   width:60% !important; 
   height:80% !important;
-  left: 20%;
 }
 
 .spsimg_ge {
   position:relative !important;
-  width:24% !important; 
-  height:24% !important;
-  left: 38%;
+  width:20% !important; 
+  height:20% !important;
 }
 
 .spsimg_ETSID {
   position:relative !important;
   width:60% !important; 
   height:60% !important;
-  left: 20%;
 }
 
 /**---------SPONSORS END---------**/
@@ -302,53 +317,6 @@ img {
     height: 50em;
 }
 /**--------OUR EVENTS END--------**/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .group_about_align_style {
     margin: 0.1em;
     color: black;
