@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--/////////PAGE DESIGN///////////////-->
 	<meta charset="utf-8">
-	<title>WattMobile team</title>
+	<title>WattMobile-team</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="WATTMOBILE UPV - Grupo de estudiantes en un proyecto de transformacion de un coche de combustion a un electrico" name="description">
+	<!--Fav-->
+  <link href="img/logo/logo2_new.png" rel="shortcut icon">
+	<!--/////////PAGE DESIGN END///////////-->
 
-	<link rel="stylesheet" type="text/css" href="../css/navbar_style.css">
-	<!--Christmas font-->
-	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
-
-	<!--fonts-->
+	<!--//////////////FONTS////////////////-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
-	<!--OUR EVENTS END-->
-	<script src= "http://code.jquery.com/jquery-latest.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<!--Christmas font-->
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<!--///////////FONTS END///////////////-->
+
+	<!--/////////////CSS///////////////////-->
+	<link rel="stylesheet" type="text/css" href="css/navbar_style.css">
+	<link rel="stylesheet" type="text/css" href="css/profile_card.css">
 	<!--Bootstrap-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--Calendar styles-->
   <link rel="stylesheet" href="css/demo.css"/>
   <link rel="stylesheet" href="css/theme.css"/>
-  <!--Calendar styles end-->
-	<script type="text/javascript" src="../js/window-scroll.js"></script>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="WATTMOBILE UPV - Grupo de estudiantes en un proyecto de transformacion de un coche de combustion a un electrico" name="description">
-  <!--EFFECTS-->
-  <link rel="stylesheet" type="text/css" href="../css/effects.scss">
+	<!--effects-->
+  <link rel="stylesheet" type="text/css" href="css/effects.scss">
   <!--Slider-->
   <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--/////////////CSS END///////////////-->
+	
+	<!--/////////////JS///////////////-->
+	<!--Slider-->
+	<script src="js/jquery.flexslider.js"></script>
+	<!--Calendar styles end-->
+	<script type="text/javascript" src="js/window-scroll.js"></script>
+  
 	<script type="text/javascript" charset="utf-8">
   	$(window).load(function() {
 	    $('.flexslider').flexslider();
@@ -44,349 +51,292 @@
 		  }
 		}*/
 	</script>
-	<script type="text/javascript">
-		/*$(document).ready(function(){
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $(".nav_estilo").addClass('la');
-        }else{
-            $(".nav_estilo").removeClass('la');
-        }
-		    });
-		});*/
-	</script>
-	<!--Slider END-->
-	<!--Profile card-->
-	<link rel="stylesheet" type="text/css" href="../css/profile_card.css">
-	<script type="../js/profile_card.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--Fav-->
-  <link href="../img/logo/logo2_new.png" rel="shortcut icon">
-	<!--
-	<script type="text/javascript">
-		$(document).ready(function(){
-		      var height = $(window).height();
-		      $('#home').height(height);
-		});
-	</script>
-	-->
+	<link rel="stylesheet" href="nav_style.css">
+  <script src="sticky.js"></script>
+	<!--////////////JS END/////////////-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container">
-		<header>
-				<nav class="navbar navbar-default navbar-fixed-top nav_estilo" style="font-family: 'Righteous', cursive;">
-						<div class="container-fluid">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed navbar-toggler" data-toggle="collapse" data-target="#menu1">
-											<span class="sr-only">Menu</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="#home" class="navbar-brand"><img alt="Logo" src="../img/logo/logo-new.png" class="logo_style"></a>
-							
-									<!--<a href="../index.html#home" class="navbar-brand"><img alt="Logo" src="../img/logo/logo-xmas.png" class="logo_style"></a>-->
-								</div>
+	<nav class="navbar navbar-expand-lg sticky-top barra" id="navbarf">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+	    <!--<span class="navbar-toggler-icon"></span>-->
+	    <span> <img src="img/icons/hamburger.png" style="width: 30px;height: 30px;"></span>
+	  </button>
+	  <img src="img/logo/logo2_new.png" class="navbar-brand" alt="Logo" style="height: 40px; width: 40px;"></img>
 
-								<div class="collapse navbar-collapse" id="menu1">
-									<ul class="nav navbar-nav">
-										<li class="item_style">
-											<a data-scroll="" href="../index.html#home">HOME</a>
-										</li>
-										<li class="item_style">
-											<a data-scroll="" href="../index.html#about">ABOUT US</a>
-										</li>
-										<li class="item_style">
-											<a data-scroll="" href="../index.html#contact">CONTACT</a>
-										</li>
-										<li class="item_style">
-											<a data-scroll="" href="../index.html#sponsors">SPONSORS</a>
-										</li>
-										<li class="item_style">
-											<a data-scroll="" href="../index.html#gallery">GALLERY</a>
-										</li>
-										<li class="item_style "">
-											<a data-scroll="" href="../index.html#our_events">OUR EVENTS</a>
-										</li>
-									</ul>
-
-									<ul class="nav navbar-nav navbar-right">
-							      <li><img src="../img/icons/instagram.png" class="social_net_style" onclick="location.href='https://www.instagram.com/wattmobileupv/'"></li>
-							      <li><img src="../img/icons/facebook.png" class="social_net_style" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'"></li>
-							    </ul>
-								</div>
-						</div>
-				</nav>
-		</header>
-	</div>
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active item_style">
+						<a class="nav-link" data-scroll="" href="index.html#home">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll="" href="index.html#about">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll="" href="index.html#contact">CONTACT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll="" href="index.html#sponsors">SPONSORS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll="" href="index.html#gallery">GALLERY</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll="" href="index.html#our_events">OUR EVENTS</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mt-auto justify-content-end " style="text-align: right;width: auto;">
+						<li><img src="./img/icons/instagram.png" class="barra_icon" onclick="location.href='https://www.instagram.com/wattmobileupv/'"></li>
+	      		<li><img src="./img/icons/facebook.png" class="barra_icon" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'"></li>
+	      </ul>
+	  </div>
+	</nav>
 	<!--HOME-->
-	<div id="home_electronics" class="container-fluid title1" style="z-index: 2;">
+	<div id="home" class="container-fluid" style="z-index: 2;">
 		<div class="row">
 			<div col-xs-12>
 				<br>
 				<!--Title-->
-				<h1 class="title_main_style">Team</h1>
+				<!--<h1 class="title_main_style">WattMobile</h1>
+				<!--Christmas
+				<h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
+				<div class="bw-gradient">
+        	<!--Title-->
+					<h1 class="title_main_style">Team members</h1>
+					<!--Christmas
+					<h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
+        </div>
 			</div>
 		</div>
 	</div>
 	<!--HOME END-->
-
-	<!-- electronics MEMBERS-->
-	<div class="members_style container-fluid" id="electronics_team">
-		<h1 class="title_style"> Electronics team</h1>
+	<!--MEMBERS-->
+	<!--electronics-->
+	<div class="container-fluid">
+		<div class="row">
+				<h1 class="title_style">Electronics</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+			<!--member 1-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/javi.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Javier Collado      Garcia</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSID</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+             	<div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+          </div>
+      </div>
+      <!--member 2-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/vlad.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSINF</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+              <div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+           </div>
+        </div>
+      </div>
+  	</div>
+  </div>
+  	<!--Marketing-->
+  	<div class="container-fluid">
+		<div class="row">
+				<h1 class="title_style">Marketing</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+			<!--member 1-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/javi.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Javier Collado      Garcia</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSID</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+             	<div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+          </div>
+      </div>
+      <!--member 2-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/vlad.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSINF</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+              <div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+           </div>
+        </div>
+      </div>
+  	</div>
+  </div>
+		<!--Structure-->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 about_us_style_description">
-					<p>
-							Whe are the champions!!!
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
-					</p>
-					<br>
-				</div>
+					<h1 class="title_style">Structure</h1>
 			</div>
+			<div class="container">
+				<div class="row">
+				<!--member 1-->
+				<div class="col-lg-3 col-sm-6">
+	          <div class="card hovercard">
+	              <div class="cardheader">
+	              </div>
+	              <div class="avatar">
+	                  <img alt="" src="img/disciplines/electronics/javi.png">
+	              </div>
+	              <div class="info">
+	                  <div class="title">
+	                      <a target="_blank" href="">Javier Collado      Garcia</a>
+	                  </div>
+	                  <div class="desc">Electronics member</div>
+	                  <div class="desc">Escuela: ETSID</div>
+	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	              </div>
+	             	<div class="bottom">
+	                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+	              </div>
+	          </div>
+	      </div>
+	      <!--member 2-->
+				<div class="col-lg-3 col-sm-6">
+	          <div class="card hovercard">
+	              <div class="cardheader">
+	              </div>
+	              <div class="avatar">
+	                  <img alt="" src="img/disciplines/electronics/vlad.png">
+	              </div>
+	              <div class="info">
+	                  <div class="title">
+	                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
+	                  </div>
+	                  <div class="desc">Electronics member</div>
+	                  <div class="desc">Escuela: ETSINF</div>
+	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	              </div>
+	              <div class="bottom">
+	                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+	              </div>
+	           </div>
+	        </div>
+	      </div>
+  	</div>
+  </div>
+  	<!--motor-->
+  	<div class="container-fluid">
+		<div class="row">
+				<h1 class="title_style">Motor & battery</h1>
 		</div>
-		<div style="align-content: center;">
-			<div class="flex" style="height: auto;">
-				<div class="card">
-				  <img src="../img/disciplines/electronics/javi.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>Javiel</h1>
-				  <h1>Collado Garcia</h1>
-				  <p class="title">Electronics responsible</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/disciplines/electronics/vlad.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>Vladyslav</h1>
-				  <h1>Mazurkevych</h1>
-				  <p class="title">Programmer,PCB responsible.</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-		</div>
-		</div>
-		<br>
-		</div>
-	<!--MEMBERS END-->
-
-	<hr>
-
-	<!--Marketing MEMBERS-->
-	<div class="members_style container-fluid" id="marketing_team">
-		<h1 class="title_style"> Marketing team</h1>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 about_us_style_description">
-					<p>
-							Whe are the champions!!!
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
-					</p>
-					<br>
-				</div>
-			</div>
-		</div>
-		<div style="align-content: center;">
-			<div class="flex" style="height: auto;">
-				<div class="card">
-				  <img src="../img/disciplines/electronics/javi.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>Javiel</h1>
-				  <h1>Collado Garcia</h1>
-				  <p class="title">Sponsors researcher</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-		</div>
-		</div>
-		<br>
-		</div>
-	<!--MEMBERS END-->
-
-	<hr>
-
-	<!-- structure MEMBERS-->
-	<div class="members_style container-fluid" id="structure_team">
-		<h1 class="title_style"> Structure team</h1>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 about_us_style_description">
-					<p>
-							Whe are the champions!!!
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
-					</p>
-					<br>
-				</div>
-			</div>
-		</div>
-		<div style="align-content: center;">
-			<div class="flex" style="height: auto;">
-				<div class="card">
-				  <img src="../img/disciplines/electronics/javi.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>Javiel</h1>
-				  <h1>Collado Garcia</h1>
-				  <p class="title">Structure member</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-		</div>
-		</div>
-		<br>
-		</div>
-	<!--MEMBERS END-->
-
-	<hr>
-
-	<!--motor_and_battery MEMBERS-->
-	<div class="members_style container-fluid" id="motor_team">
-		<h1 class="title_style"> Motor & battery team</h1>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 about_us_style_description">
-					<p>
-							Whe are the champions!!!
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate molestie lacus nec suscipit. Fusce eu varius turpis. Etiam pellentesque malesuada faucibus. Etiam non neque pharetra, ullamcorper ante at, iaculis neque. Donec at est scelerisque nisi condimentum placerat. Quisque id justo et mi consectetur vulputate vitae gravida ligula. Donec convallis porttitor mi, ut accumsan tortor dignissim a. Donec sed lacus lorem. Quisque nec fringilla nisi. Nunc et rhoncus diam. Vestibulum sapien mauris, posuere in bibendum ut, dapibus ac neque. 
-					</p>
-					<br>
-				</div>
-			</div>
-		</div>
-		<div style="align-content: center;">
-			<div class="flex" style="height: auto;">
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellidos</h1>
-				  <p class="title">group responsible.</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-
-				<div class="card">
-				  <img src="../img/logo/logo.png" alt="Name" style="width:100%;"><!--190x190px-->
-				  <h1>nombre</h1>
-				  <h1>apellido</h1>
-				  <p class="title">Battery, Lider</p>
-				  <p>Polytechnic University of Valencia</p>
-				  <a href="#"><i class="fa fa-linkedin"></i></a> 
-				  <p><button onclick="location.href='mailto:em@i.l';">Contact</button></p>
-				</div>
-		</div>
-		</div>
-		<br>
-		</div>
+			<!--member 1-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/javi.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Javier Collado      Garcia</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSID</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+             	<div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+          </div>
+      </div>
+      <!--member 2-->
+			<div class="col-lg-3 col-sm-6">
+          <div class="card hovercard">
+              <div class="cardheader">
+              </div>
+              <div class="avatar">
+                  <img alt="" src="img/disciplines/electronics/vlad.png">
+              </div>
+              <div class="info">
+                  <div class="title">
+                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
+                  </div>
+                  <div class="desc">Electronics member</div>
+                  <div class="desc">Escuela: ETSINF</div>
+                  <div class="desc">Universidad Politecnica de Valencia</div>
+              </div>
+              <div class="bottom">
+                  <a href="#" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+              </div>
+           </div>
+      	</div>
+  	</div>
+  </div>
+</div>
 	<!--MEMBERS END-->
 
 	<!--FOOTER-->
   <footer>
     <div class="footer-bottom font_WM">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
         	<div class="col-sm-4 col-xs-0"></div>
           <div class="col-sm-4 col-xs-12">
-          	<img src="../img/logo/logo2_new.png" alt="crafted with love" class="center-block" style="height: 80px;width: 80px;" />
+          	<img src="img/logo/logo2_new.png" alt="crafted with love" class="center-block" style="height: 80px;width: 80px;" />
           	<!--<img src="../img/logo/logo-xmas.png" alt="crafted with love" class="center-block" style="height: 40px;width: 40px;" />-->
           </div>
           <div class="col-sm-2 col-xs-0"></div>
           <div class="col-sm-1 col-xs-6">
-          	<img src="../img/icons/instagram.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
+          	<img src="img/icons/instagram.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
           </div>
           <div class="col-sm-1 col-xs-6">
-          	<img src="../img/icons/facebook.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
+          	<img src="img/icons/facebook.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
           </div>
        </div>
        <div class="row">
@@ -405,6 +355,9 @@
   	</div>
 	</div>
 -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--CALENDAR SCRIPTS-->
 	<script type="text/javascript" src="js/caleandar.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
