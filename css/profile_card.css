@@ -193,8 +193,26 @@
     background-color: rgba(214, 224, 226, 0.2);
 }
 
-.card.hovercard .cardheader {
+.card.hovercard .cardheader_e {
     background: url("https://images.pexels.com/photos/159220/printed-circuit-board-print-plate-via-macro-159220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    height: 130px;
+}
+
+.card.hovercard .cardheader_m {
+    background: url("https://images.pexels.com/photos/955450/pexels-photo-955450.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    height: 130px;
+}
+
+.card.hovercard .cardheader_s {
+    background: url("https://images.pexels.com/photos/401796/pexels-photo-401796.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    height: 130px;
+}
+
+.card.hovercard .cardheader_b {
+    background: url("https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size: cover;
     height: 130px;
 }
@@ -258,3 +276,9 @@
     background: #084461;
     color: #fff;
   }
+
+
+/**marketing**/
+#marketing ,#motor {
+  background-color: #f5f5f5;
+}

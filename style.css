@@ -275,7 +275,7 @@ img {
     height: 100%;
     /*position: relative;*/
     margin:0;
-    background: url(img/sponsors/testimonial-bg.jpg)no-repeat center center fixed;
+    background: url(img/sponsors/testimonial-bg.jpg)no-repeat center center fixed!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
