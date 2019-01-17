@@ -39,9 +39,6 @@
 	<script type="text/javascript" src="js/window-scroll.js"></script>
   
 	<script type="text/javascript" charset="utf-8">
-  	$(window).load(function() {
-	    $('.flexslider').flexslider();
-	  });
 	  //DETECTS THE POSITION ON THE SCREEN
 	  /*window.onscroll = function() {aboutUsScroll()};
 		function aboutUsScroll() {
@@ -91,7 +88,7 @@
 	  </div>
 	</nav>
 	<!--HOME-->
-	<div id="home" class="container-fluid" style="z-index: 2;">
+	<div id="home" class="container-fluid div_home" style="z-index: 2;">
 		<div class="row">
 			<div col-xs-12>
 				<br>
@@ -361,35 +358,33 @@
 	<!--OUR EVENTS END-->
 	<!--FOOTER-->
   <footer>
-    <div class="footer-bottom font_WM">
-      <div class="container">
+      <div class="container-fluid footer-bottom">
         <div class="row">
-        	<div class="col-sm-4 col-xs-0"></div>
+        	<div class="col-md-4 col-0"></div>
 
-          <div class="col-sm-4 col-xs-12">
-          	<img src="img/logo/logo2_new.png" alt="crafted with love" class="center-block" style="height: 80px;width: 80px;" />
+          <div class="col-md-4 col-12" align="center">
+          	<img src="img/logo/logo2_new.png" alt="crafted with love" style="height: 80px;width: 80px;" />
           	<!--<img src="img/logo/logo-xmas.png" alt="crafted with love" class="center-block" style="height: 40px;width: 40px;" />-->
           </div>
 
-          <div class="col-sm-2 col-xs-0"></div>
+          <div class="col-md-2 col-0"></div>
 
-          <div class="col-sm-1 col-xs-6">
-          	<img src="img/icons/instagram.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
+          <div class="col-md-1 col-6" align="right">
+          	<img src="img/icons/instagram.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
           </div>
 
-          <div class="col-sm-1 col-xs-6">
-          	<img src="img/icons/facebook.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 30px;width: 30px;" />
+          <div class="col-md-1 col-6" align="left">
+          	<img src="img/icons/facebook.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
           </div>
        </div>
        <div class="row">
-       		<div class="col-xs-12">
-       			 <center><h3>© 2018 WATTMOBILE UPV. All rights reserved.</h3></center>
+       		<div class="col-xs-12 col-sm-12">
+       			 <h3 align="center" class="footer_text">© 2018 WATTMOBILE UPV. All rights reserved.</h3>
        		</div>
        </div> 
       </div>
-    </div>
   </footer>
-  <!--/.FOOTER-END-->
+  <!--FOOTER-END-->
 
   <!--callout message-->
   <div class="callout" style="z-index: 999;">
