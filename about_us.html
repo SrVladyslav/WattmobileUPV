@@ -31,6 +31,8 @@
   <link rel="stylesheet" type="text/css" href="css/effects.scss">
   <!--Slider-->
   <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <!--animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!--/////////////CSS END///////////////-->
 	
 	<!--/////////////JS///////////////-->
@@ -67,22 +69,22 @@
 	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active item_style">
-						<a class="nav-link" data-scroll="" href="index.html#home">HOME</a>
+						<a class="nav-link" data-scroll="" href="index.html#home" data-aos="fade-in-down">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="index.html#about">ABOUT US</a>
+						<a class="nav-link" data-scroll="" href="index.html#about" data-aos="fade-in-down">ABOUT US</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="index.html#contact">CONTACT</a>
+						<a class="nav-link" data-scroll="" href="index.html#contact" data-aos="fade-in-down">CONTACT</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="index.html#sponsors">SPONSORS</a>
+						<a class="nav-link" data-scroll="" href="index.html#sponsors" data-aos="fade-in-down">SPONSORS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="index.html#gallery">GALLERY</a>
+						<a class="nav-link" data-scroll="" href="index.html#gallery" data-aos="fade-in-down">GALLERY</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="index.html#our_events">OUR EVENTS</a>
+						<a class="nav-link" data-scroll="" href="index.html#our_events" data-aos="fade-in-down">OUR EVENTS</a>
 					</li>
 				</ul>
 				<ul class="navbar-nav mt-auto justify-content-end " style="text-align: right;width: auto;">
@@ -119,7 +121,7 @@
 		<div class="container">
 			<div class="row">
 			<!--member 1-->
-			<div class="col-lg-3 col-sm-6">
+			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
           <div class="card hovercard">
               <div class="cardheader_e">
               </div>
@@ -140,7 +142,7 @@
           </div>
       </div>
       <!--member 2-->
-			<div class="col-lg-3 col-sm-6">
+			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
           <div class="card hovercard">
               <div class="cardheader_e">
               </div>
@@ -458,5 +460,10 @@
   <!--CALENDAR SCRIPTS-->
 	<script type="text/javascript" src="js/caleandar.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
+	<!--animation-->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
