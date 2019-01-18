@@ -39,7 +39,11 @@
 	<!--Slider-->
 	<script src="js/jquery.flexslider.js"></script>
 	<!--Calendar styles end-->
-	<script type="text/javascript" src="js/window-scroll.js"></script>
+	<script type="text/javascript" src="js/window-scroll.js">
+		$(window).scroll(function() { 
+			var hT = $('#scroll-to').offset().top, hH = $('#scroll-to').outerHeight(), wH = $(window).height(), wS = $(this).scrollTop();
+			if (wS > (hT+hH-wH)){ console.log('H1 on the view!'); } });
+	</script>
   
 	<script type="text/javascript" charset="utf-8">
   	$(window).load(function() {
@@ -64,7 +68,7 @@
 	    <!--<span class="navbar-toggler-icon"></span>-->
 	    <span> <img src="img/icons/hamburger.png" style="width: 30px;height: 30px;"></span>
 	  </button>
-	  <img src="img/logo/logo2_new.png" class="navbar-brand" alt="Logo" style="height: 40px; width: 30px;margin:0 auto;"></img>
+	  <img src="img/logo/logo2_new.png" class="navbar-brand" alt="Logo" style="height: 40px; width: 30px;"></img>
 
 	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
