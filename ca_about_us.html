@@ -114,7 +114,6 @@
 	<div id="home" class="container-fluid" style="z-index: 2;">
 		<div class="row">
 			<div class="col-xs-12">
-				<br>
 				<!--Title-->
 				<!--<h1 class="title_main_style">WattMobile</h1>
 				<!--Christmas
@@ -436,5 +435,28 @@
     };
 	</script>
   <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+  <script type="text/javascript" charset="utf-8">
+	  //DETECTS THE POSITION ON THE SCREEN
+		$(document).ready(function() {
+			if($(document).scrollTop() <= 100) {
+				$('#navbarf').addClass('header_color');
+				$('#navbarf').removeClass('barra');
+			}
+			else {
+				$('#navbarf').addClass('barra');
+				$('#navbarf').removeClass('header_color');
+			}
+		});
+		$(window).scroll(function() {
+			if($(document).scrollTop() <= 100) {
+				$('#navbarf').addClass('header_color');
+				$('#navbarf').removeClass('barra');
+			}
+			else {
+				$('#navbarf').addClass('barra');
+				$('#navbarf').removeClass('header_color');
+			}
+		});
+	</script>
 </body>
 </html>
