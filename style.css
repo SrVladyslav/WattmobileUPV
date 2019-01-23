@@ -397,11 +397,7 @@ hr{
 
 #home {
     background-color: black;
-    background: url(img/people/hero2.jpeg) no-repeat center center fixed;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(img/people/hero2.jpeg);
     background-size: cover;
 }
 

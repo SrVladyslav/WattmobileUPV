@@ -39,26 +39,6 @@
 	<script src="js/jquery.flexslider.js"></script>
 	<!--Calendar styles end-->
 	<script type="text/javascript" src="js/window-scroll.js"></script>
-  
-	<script type="text/javascript" charset="utf-8">
-	  //DETECTS THE POSITION ON THE SCREEN
-	  /*window.onscroll = function() {aboutUsScroll()};
-		function aboutUsScroll() {
-		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-		    document.getElementById("myImg").className = "slideUp";
-		  }
-		}*/
-		/*$(window).scroll(function() {
-			if($(document).scrollTop() > 50) {
-				$('navbarf').addClass('header_color');
-				$('navbarf').removeClass('barra');
-			}
-			else {
-				$('navbarf').addClass('barra');
-				$('navbarf').removeClass('header_color');
-			}
-		});*/
-	</script>
 
 	<script type="text/javascript">
 		/*function myFunction() {
@@ -126,7 +106,6 @@
 	<div id="home" class="container-fluid" style="z-index: 2;">
 		<div class="row">
 			<div class="col-xs-12">
-				<br>
 				<!--Christmas
 				<h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
 				<div class="bw-gradient">
@@ -354,13 +333,13 @@
 					<!--calendar-->
 					<div class="col-xs-12 col-sm-6" >
 							<div id="caleandar" align="center"></div>
-							<!--
+							
 							<div>
 								<br><center class="next_competition">Next competition in: <p id="demo" style="color: #0E6103;"></p></center>
 
 								<script>
 									// Set the date we're counting down to
-									var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+									var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
 									// Update the count down every 1 second
 									var x = setInterval(function() {
@@ -389,7 +368,7 @@
 								}, 1000);
 								</script>
 							</div>
-							-->
+							
 					</div>
 				</div>
 		</div>
@@ -427,13 +406,13 @@
   <!--FOOTER-END-->
 
   <!--callout message-->
-  <div class="callout" style="z-index: 999;" data-aos="fade-up">
+  <!--<div class="callout" style="z-index: 999;" data-aos="fade-up">
   	<div class="callout-header">Wattmobile news!⚠️</div>
   	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   	<div class="callout-container">
     <p>Actualmente esta página esta siendo remodelada.Sentimos los fallos 😅</p>
   	</div>
-	</div>
+	</div>-->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -460,5 +439,36 @@
     };
 	</script>
   <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+	  //DETECTS THE POSITION ON THE SCREEN
+	  /*window.onscroll = function() {aboutUsScroll()};
+		function aboutUsScroll() {
+		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+		    document.getElementById("myImg").className = "slideUp";
+		  }
+		}*/
+
+		$(document).ready(function() {
+			if($(document).scrollTop() <= 350) {
+				$('#navbarf').addClass('header_color');
+				$('#navbarf').removeClass('barra');
+			}
+			else {
+				$('#navbarf').addClass('barra');
+				$('#navbarf').removeClass('header_color');
+			}
+		});
+		$(window).scroll(function() {
+			if($(document).scrollTop() <= 350) {
+				$('#navbarf').addClass('header_color');
+				$('#navbarf').removeClass('barra');
+			}
+			else {
+				$('#navbarf').addClass('barra');
+				$('#navbarf').removeClass('header_color');
+			}
+		});
+	</script>
 </body>
 </html>
