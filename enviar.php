@@ -48,7 +48,7 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->Host = "ssl://smtp.gmail.com:465";  // Servidor de Salida. 465 es uno de los puertos que usa Google para su servidor SMTP
     $mail->SMTPAuth = true; 
     $mail->Username = "gcdevlady@gmail.com";  // Correo Electrónico
-    $mail->Password = "contraseña"; // Contraseña del correo
+    $mail->Password = "contraseña</a>"; // Contraseña del correo
 
     if ($mail->Send())
     echo "<script>alert('Formulario enviado exitosamente, le responderemos lo más pronto posible.');location.href ='javascript:history.back()';</script>";
