@@ -14,6 +14,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 /**---------------GENERAL STYLE-------------**/
+.no_selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+
 img { 
     display: inline; 
     margin: 0 auto; 
@@ -80,12 +87,13 @@ img {
 .title_style {
     font-size: 4em;
     font-family: 'Roboto', regular;
+    font-family: wattmobile_1;
     font-weight: bold;
     margin:0.5em;
 }
 
 .subtitle_style {
-    font-size: 3em;
+    font-size: 2em;
     /*font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;*/
     font-family: 'Roboto', regular;
@@ -858,6 +866,10 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
     .group_style {
       font-size: 1.5em;
       text-align: center;
+    }
+
+    .no_selection {
+      color: white;
     }
 
     #gallery {
