@@ -348,12 +348,71 @@ img {
 /**---------SPONSORS END---------**/
 
 /**----------GALLERY-------------**/
+/**https://blackboxanalog.com/wp-content/uploads/2014/10/black-floral-texture-pattern-design-wallpaper-background.jpg*/
+
+.gallery_button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #0BAA10,#C803CB,#f441a5,#0BAA10);
+  background-size: 500%;
+  border-radius: 50px;
+}
+
+.gallery_button:hover {
+  animation: button_animation 8s linear infinite;
+}
+
+@keyframes button_animation {
+  0%{
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.gallery_button:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #0BAA10,#C803CB,#ffeb3b,#0BAA10);
+  background-size: 400%;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.gallery_button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: button_animation 8s linear infinite;
+}
+
+a {
+  text-decoration: none!important;
+}
 
 #gallery {
-  background-color:  #f5f5f5;
+  background-color: black;
+  background: url(img/gallery/gallery-bg.jpg);
+  background-position: center;
   background-size: cover;
   width:100%;
-  height: auto;
+  height: 80%;
   display: inline-block;
 }
 
@@ -800,6 +859,23 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
       font-size: 1.5em;
       text-align: center;
     }
+
+    #gallery {
+      height: 40%;
+    }
+
+    .gallery_button {
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      border-radius: 30px;
+    }
+
+    .gallery_button:before {
+      border-radius: 30px;
+    }
 }
 
 /**responsive**/
@@ -836,7 +912,25 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
     .next_competition {
       font-size: 1em;
     }
+
+    #gallery {
+      height: 30%;
+    }
+
+    .gallery_button {
+      width: 110px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 10px;
+      border-radius: 20px;
+    }
+
+    .gallery_button:before {
+      border-radius: 20px;
+    }
 }
+
 
 @media all and (orientation:landscape) {
   
