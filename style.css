@@ -736,9 +736,9 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
 
 .footer-bottom{
   width: 100%;
-  background: #2f2f2f;
+  background: black;
   padding: 50px 0;
-  color: #636363;
+  color: white;
 }
 
 .footer_text {
