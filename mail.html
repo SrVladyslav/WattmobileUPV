@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css"> 
 	<!--Fav-->
-  <link href="img/logo/logo.png" rel="shortcut icon">
+   <link href="img/logo/logo.png" rel="shortcut icon">
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 <body>
@@ -18,7 +19,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
-                <form class="form-horizontal" action="enviar.php" method="post" name="form1">
+                <form class="form-horizontal" action="https://formspree.io/gcdevlady@gmail.com" method="POST" method="post" name="form1">
                     <fieldset>
                         <legend class="title header">Contact us</legend>
                         <div class="form-group">
@@ -57,7 +58,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn  btn-lg send" disabled="true">Submit</button>
+                                <button type="submit" class="btn  btn-lg send" >Submit</button>
                             </div>
                         </div>
                     </fieldset>
@@ -68,8 +69,16 @@
     <!--MAIL END-->
 
     <!--OUR EVENTS END-->
-		<script src= "http://code.jquery.com/jquery-latest.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+  function send() {
+    var link = 'mailto:gcdevlady@gmail.com?subject=Message from '
+             +document.getElementById('email').value
+             +'&body='+document.getElementById('email').value;
+    window.location.href = link;
+}
+</script>
+	<script src= "http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </div>
 </body>
 </html>
