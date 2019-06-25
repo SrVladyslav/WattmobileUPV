@@ -69,7 +69,8 @@ img {
 .nav-link {
   color: white!important;
   font-size: 18px;
-  font-family: wattmobile_1;
+  /*font-family: wattmobile_1;*/
+  font-family: 'Roboto', regular;
   margin: 0;
   font-weight: bold;
 }
@@ -87,7 +88,7 @@ img {
 .title_style {
     font-size: 4em;
     font-family: 'Roboto', regular;
-    font-family: wattmobile_1;
+    /*font-family: wattmobile_1;*/
     font-weight: bold;
     margin:0.5em;
 }
@@ -232,7 +233,7 @@ img {
     text-align: center;
     /*font-family: 'Righteous', cursive;*/
     /**animation**/
-    font-family: wattmobile_1;
+    font-family: wattmobile_1!important;
     font-weight: bold;
 
     -webkit-animation-name: title_color; /* Safari 4.0 - 8.0 */
@@ -315,6 +316,14 @@ img {
     align-items: left;
     font-size: 3em;
 }
+/**form**/
+.form_mail {
+    margin: 0em;
+    align-items: right!important;
+    width:auto !important;
+    height: auto;
+}
+
 /**---------CONTACT END----------**/
 
 /**---------SPONSORS-------------**/

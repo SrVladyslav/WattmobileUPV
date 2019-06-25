@@ -25,14 +25,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--Calendar styles-->
-  <link rel="stylesheet" href="css/demo.css"/>
-  <link rel="stylesheet" href="css/theme.css"/>
+  	<link rel="stylesheet" href="css/demo.css"/>
+  	<link rel="stylesheet" href="css/theme.css"/>
 	<!--effects-->
-  <link rel="stylesheet" type="text/css" href="css/effects.scss">
-  <!--Slider-->
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <!--animation-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  	<link rel="stylesheet" type="text/css" href="css/effects.scss">
+  	<!--Slider-->
+  	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  	<!--animation-->
+   	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   	<!--mail-->
+   	<link rel="stylesheet" type="text/css" href="css/mail-form.css">
 	<!--/////////////CSS END///////////////-->
 	
 	<!--/////////////JS///////////////-->
@@ -125,8 +127,8 @@
 		-->
 	<!--</div>
 	TRAILER-->
-
 	<!--ABOUT US-->
+
 	<div class="container-fluid" id="about" data-aos="fade-up">
 			<div class="row">
 					<h1 class="title_style">SOBRE NOSOTROS</h1>
@@ -177,7 +179,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-5 about_us_style_description" data-aos="fade-up">
 								<h1 class="subtitle_style">DESCRIPCÍON GENERAL</h1>
-								<p style="text-align : justify;">
+								<p style="text-align: justify;">
 										Un proyecto fundamentado en el aprendizaje continuo y la puesta en práctica de los conceptos teóricos que adquirimos en la Universidad. Propulsado por las bulliciosas mentes de algunos estudiantes de la Universitat Politècnica de València, Wattmobile UPV toma desde sus raíces un compromiso determinante con uno de los problemas contemporáneos más trascendentales, el calentamiento global producido por la incesante emisión de gases contaminantes a la atmósfera.
 										<br><br>
 										Es por esto que en Wattmobile UPV apostamos por la conversión de vehículos de combustión en eléctricos, y es nuestro compromiso mostrar que a base de trabajo en equipo e implicación podemos ser capaces de dar forma a un prototipo competitivo, capaz de batirse al más alto nivel con emisiones 0.
@@ -199,14 +201,56 @@
 			</div>
 			<!--CONTACT DESCRIPTION-->
 			<div class="row">
-					<div class="col-xs-12 col-sm-6" >
-							<img src="img/logo/logo2_new.png" data-aos="fade-right" class="contact_logo">
-					</div>
-					<div class="col-xs-12 col-sm-6" data-aos="fade-up">
-          		<h1 class="contact_style_text" >CONTÁCTANOS:</h1>
-          		<a href="mail.html" target="_blank" class="contact_style_text" >wattmobile@wattmobileupv.es</a><br>
-              <h1 class="contact_style_text wattmobile_font no_selection"> WATTMOBILE UPV</h1>
-					</div>
+				<div class="col-sm-12 col-md-8">
+						<img src="img/logo/logo2_new.png" data-aos="fade-right" class="contact_logo">
+						<a href="mail.html" target="_blank" class="contact_style_text" >wattmobile@wattmobileupv.es</a><br>
+				</div>
+				<div class="col-sm-12 col-md-4 form_mail">
+				  	<form class="form_mail" action="https://formspree.io/gcdevlady@gmail.com" method="POST" method="post" name="form1">
+					  <!--Form-->
+				      <!--Header-->
+				      <div class="text-center">
+				        <h3 class="font-weight-bold text-uppercase"><strong>Contáctanos</strong></h3>
+				      </div>
+
+				      <div class="row">
+				      	<label for="form100">Your name</label>
+				        <input type="text" id="form100" class="form-control form-group">
+				      </div>
+
+				      <div class="row">
+				      	<label for="form101">Your email</label>
+				        <input type="text" id="form101" class="form-control form-group">
+				      </div>
+
+				      <div class="row">
+				      	<label for="form102">Subject</label>
+				        <input type="text" id="form102" class="form-control form-group">
+				      </div>
+
+				      <div class="row">
+				      	<label for="form103">Your message</label>
+				        <textarea id="form103" class="form-control form-group" rows="5"></textarea>
+				      </div>
+
+				      <!--Grid row-->
+				      <div class="row align-items-center">
+				        <!--Grid column-->
+				        <div class="text-center col-md-12">
+				          <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Send</button>
+				        </div>
+				        <!--Grid column-->
+				      </div>
+					      <!--Grid row-->
+					  <!--/Form-->
+				  </form>
+				  <br>
+				</div>
+				<!--<div class="col-xs-12 col-sm-6" data-aos="fade-up">
+          			<h1 class="contact_style_text" >CONTÁCTANOS:</h1>
+	          			<a href="mail.html" target="_blank" class="contact_style_text" >wattmobile@wattmobileupv.es</a><br>
+	              	<h1 class="contact_style_text wattmobile_font no_selection"> WATTMOBILE UPV</h1>
+				</div>-->		
 			</div>
 			<!--SOCIAL NETWORKS
 			<div class="row">
@@ -274,7 +318,7 @@
 	<!--GALLERY END-->
 
 	<!--OUR EVENTS-->
-	<div class="container-fluid" data-aos="fade-up">
+	<!--<div class="container-fluid" data-aos="fade-up">
 		<div id="our_events">
 				<div class="row">
 					<div class="col-xs-12">
@@ -283,8 +327,8 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6" >
-								<!--TYPES OF EVENTS-->
-								<div class="row">
+								--><!--TYPES OF EVENTS-->
+								<!--<div class="row">
 										<h2 class="subtitle_style" style="margin-left: 0.5em;">  Competiciones importantes:</h2>
 								</div>
 								<div class="row">
@@ -302,8 +346,8 @@
 								<div class="row">
 										<h2 class="description_style"> >UPV competiciones </h2>
 								</div>
-					</div>
-					<!--calendar-->
+					</div>-->
+					<!--calendar--><!--
 					<div class="col-xs-12 col-sm-6" >
 							<div id="caleandar" align="center"></div>
 							
@@ -345,7 +389,7 @@
 					</div>
 				</div>
 		</div>
-	</div>
+	</div>-->
 	<!--OUR EVENTS END-->
 	<!--FOOTER-->
   <footer>
@@ -416,7 +460,7 @@
   <script type="text/javascript" charset="utf-8">
 	  //DETECTS THE POSITION ON THE SCREEN
 		$(document).ready(function() {
-			if($(document).scrollTop() <= 5) {
+			if($(document).scrollTop() <= 2) {
 				$('#navbarf').addClass('header_color');
 				$('#navbarf').removeClass('barra');
 			}
@@ -426,7 +470,7 @@
 			}
 		});
 		$(window).scroll(function() {
-			if($(document).scrollTop() <= 5) {
+			if($(document).scrollTop() <= 2) {
 				$('#navbarf').addClass('header_color');
 				$('#navbarf').removeClass('barra');
 			}
