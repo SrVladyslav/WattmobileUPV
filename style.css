@@ -2,9 +2,10 @@ html{
 	height: 100%;
     /*background-image: url(img/logo/logo-big.png);*/
     /**font-family: 'Roboto', sans-serif;*/
+  background-color: black;
 }
 body {
-    /*margin: 0em auto;*/
+    margin: 0em auto;
     height: 100%;
     /**no se admite seleccionar para copiar*/
     -webkit-user-select: none;
@@ -12,6 +13,7 @@ body {
     -khtml-user-select: none;
     -ms-user-select:none;
     font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
 /**---------------GENERAL STYLE-------------**/
 .no_selection {
@@ -33,11 +35,18 @@ img {
   position: fixed;
 }
 
-.barra_icon {
+.barra_icon_i {
   margin-top: -2px!important;
   height: 40px!important;
   width: 40px!important;
   margin-right: 10px!important;
+}
+
+.barra_icon_f {
+  margin-top: -2px!important;
+  height: 40px!important;
+  width: 50px!important;
+  margin-right: 5px!important;
 }
 
 .dropdown-item {
@@ -90,6 +99,7 @@ img {
     font-family: 'Roboto', regular;
     /*font-family: wattmobile_1;*/
     font-weight: bold;
+    color: white!important;
     margin:0.5em;
 }
 
@@ -99,6 +109,7 @@ img {
     font-family: 'Roboto', sans-serif;*/
     font-family: 'Roboto', regular;
     font-weight: bold;
+    color: white;
 }
 
 .div_rounded {
@@ -264,7 +275,8 @@ img {
 
 /**---------ABOUT US--------------**/
 #about {
-  background-color:  #f5f5f5;
+  /*background-color:  #f5f5f5;*/
+  background-color: #041B1B;/*black!important;*/
 }
 
 .group_about_style {
@@ -276,7 +288,8 @@ img {
 }
 
 .group_about_style:hover {
-    background-color: rgba(0,181,55, 1);
+    /*background-color: rgba(0,181,55, 1);*/
+    background-color: #0AC1B7;
 }
   
 .group_style {
@@ -285,23 +298,30 @@ img {
     color: black;
     margin-top: 0.25em;
 }
+.div_group_style {
+  background-color: #44DAD2;
+}
 
 .about_us_style_description {
-    background-color: #f5f5f5;/*#dddddd*/
+    /*background-color: #f5f5f5;/*#dddddd*/
+    background-color: #041B1B!important;
+    color: while;
 }
 /**---------ABOUT US END----------**/
 
 /**---------CONTACT----------**/
 #contact {
-    background-color: white;
-    width:auto;
-    height: auto;
+    /*background-color: white;*/
+    background-color: black!important;
+    /*width:auto;
+    height: auto;*/
     display: inline-block;
-    margin: 0; 
+    margin: 0,auto; 
 }
 
 .contact_style_text {
   font-size: 2em;
+  color: white;
 }
 
 .contact_logo {
@@ -315,14 +335,7 @@ img {
     vertical-align: middle;
     align-items: left;
     font-size: 3em;
-}
-/**form**/
-.form_mail {
-    margin: 0em;
-    align-items: right!important;
-    width:auto !important;
-    height: auto;
-}
+} 
 
 /**---------CONTACT END----------**/
 
@@ -334,7 +347,7 @@ img {
     /*position: relative;*/
     margin:0;
     /*background: url(img/sponsors/testimonial-bg.jpg)no-repeat center center fixed;*/
-    background-color: black;
+    background-color: #041B1B;/*black;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -607,6 +620,7 @@ hr{
     color: black;
     font-size: 2em;
     font-weight: bold;
+    color: white!important;
     font-family: 'Righteous', cursive;
 }
 
@@ -795,11 +809,19 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
 
 @media only screen and (max-width: 990px) {
 
-    .barra_icon {
+    .barra_icon_i {
       margin-top: 10px!important;
       height: 40px;
       width: 40px;
       margin-right: 10px;
+      left: 10%!important;
+    }
+
+    .barra_icon_f {
+      margin-top: 10px!important;
+      height: 40px;
+      width: 50px;
+      margin-right: 5px;
       left: 10%!important;
     }
 
