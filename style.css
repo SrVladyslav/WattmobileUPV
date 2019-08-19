@@ -35,7 +35,7 @@ nav {
   color: green;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 40px !important;
 }
 
 .nav-links {
@@ -53,6 +53,26 @@ nav {
   text-decoration: none!important;
   letter-spacing: 2px;
   font-size: 15px;
+}
+
+/**Line effect**/
+.nav-links li a:before {
+  content: '';
+  width: 50px;
+  position: absolute;
+  border-bottom: 2px solid white;
+  transition: 0.5s all;
+  top: 36px;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+.nav-links a:hover:before {
+  top: 35px;
+  width: 60px;
+  background-color: green;
 }
 
 .burger {
@@ -124,6 +144,13 @@ nav {
 .toggle .lin3 {
   transform: rotate(45deg) translate(-5px,-6px);
 }
+
+.line {
+  width: 120px;
+  height: 3px;
+  background-color: white;
+}
+
 
 /**---------------GENERAL STYLE-------------**/
 .no_selection {
