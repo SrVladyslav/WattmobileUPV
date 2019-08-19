@@ -58,27 +58,26 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="sticky ">
+	<nav class="sticky" id="navBar">
 		<div class="logo">
-			<h4>Wattmobile</h4>
+			<!--<img src="img/logo/logo2_new.png" alt="Wattmobile" style="height: 40px; width: 30px;"></img>-->
+			<h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
 		</div>
 		<ul class="nav-links">
 			<li><a href="#home">Principal</a></li>
 			<li><a href="#about">Nosotros</a></li>
 			<li><a href="#contact">Contacto</a></li>
-			<li><a href="#sponsors">Patrocinadores</a></li>
-			<!--<li><a href="#">Home4</a></li>
-			<li><a href="#">Home5</a></li>
-			<li><a href="#">Home6</a></li>-->
-						<li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          <img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-			          <a class="dropdown-item" href="en_index.html"><img src="img/icons/flags/GB_flag.png" style=" height: 30px; width: 30px; margin-top: -5px;"> English</a>
-			          <a class="dropdown-item" href="ca_index.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -5px;"> Valencià</a>
-			          
-			      </li>
+			<li><a href="#sponsors">Patrocinio</a></li>
+			<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+		          <a class="dropdown-item" href="en_index.html"><img src="img/icons/flags/GB_flag.png" style=" height: 30px; width: 30px; margin-top: -10px;"> English</a>
+		          <a class="dropdown-item" href="ca_index.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -10px;"> Valencià</a>	
+		        </div>          
+			</li>
+			<li></li>
 		</ul>
 		<div class="burger">
 			<div class="lin1"></div>
@@ -447,7 +446,7 @@
        <br>
        <div class="row">
        		<div class="col-xs-12 col-sm-12">
-       			 <h3 align="center" class="footer_text">© 2018 WATTMOBILE UPV. Todos los derechos reservados.</h3>
+       			 <h3 align="center" class="footer_text">©2019 WATTMOBILE UPV. Todos los derechos reservados.</h3>
        		</div>
        </div> 
       </div>
@@ -493,22 +492,26 @@
 	  //DETECTS THE POSITION ON THE SCREEN
 		$(document).ready(function() {
 			if($(document).scrollTop() <= 2) {
-				$('#navbarf').addClass('header_color');
-				$('#navbarf').removeClass('barra');
+				$('#navBar').addClass('header_color');
+				$('#navBar').removeClass('barra');
+				$('#nav-links').addClass('barOnTop');
 			}
 			else {
-				$('#navbarf').addClass('barra');
-				$('#navbarf').removeClass('header_color');
+				$('#navBar').addClass('barra');
+				$('#navBar').removeClass('header_color');
+				$('#nav-links').removeClass('barOnTop');
 			}
 		});
 		$(window).scroll(function() {
 			if($(document).scrollTop() <= 2) {
-				$('#navbarf').addClass('header_color');
-				$('#navbarf').removeClass('barra');
+				$('#navBar').addClass('header_color');
+				$('#navBar').removeClass('barra');
+				$('#nav-links').addClass('barOnTop');
 			}
 			else {
-				$('#navbarf').addClass('barra');
-				$('#navbarf').removeClass('header_color');
+				$('#navBar').addClass('barra');
+				$('#navBar').removeClass('header_color');
+				$('#nav-links').removeClass('barOnTop');
 			}
 		});
 	</script>
