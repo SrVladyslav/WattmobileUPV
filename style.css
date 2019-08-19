@@ -209,7 +209,8 @@ img {
 }
 
 .dropdown-item:hover {
-  background: #0E6103!important;
+  color: #44DAD2!important;
+  background: black!important;
 }
 
 .dropdown-menu{
@@ -395,7 +396,6 @@ img {
     overflow: hidden;
     font-size: 10em;
     /*font-weight: bold;*/
-    color: white;
     text-align: center;
     /*font-family: 'Righteous', cursive;*/
     /**animation**/
@@ -929,18 +929,18 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
 @-webkit-keyframes title_color {
   0%   {color: #1DF900;}
   20%  {color: #15B200;}
-  40%  {color: #0E6103;}
+  40%  {color: #44DAD2;}
   60%  {color: #FDFEFE;}
-  80%  {color: #0E6103;}
+  80%  {color: #44DAD2;}
   100% {color: #15B200;}
 }
 
 @keyframes title_color {
   0%   {color: #1DF900;}
   20%  {color: #15B200;}
-  40%  {color: #0E6103;}
+  40%  {color: #44DAD2;}
   60%  {color: #FDFEFE;}
-  80%  {color: #0E6103;}
+  80%  {color: #44DAD2;}
   100% {color: #15B200;}
 }
 
