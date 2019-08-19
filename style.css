@@ -48,6 +48,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 40%; 
 }
 
@@ -63,7 +64,7 @@ nav {
 }
 
 /**Line effect**/
-.nav-links li a:before {
+.nav-links li:before {
   content: '';
   width: 50px;
   position: absolute;
@@ -76,10 +77,11 @@ nav {
   color: green;
 }
 
-.nav-links a:hover:before {
+.nav-links li:hover:before {
   top: 35px;
   width: 60px;
   background-color: green;
+  align-items: left;
 }
 
 .burger {
