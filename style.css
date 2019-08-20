@@ -485,6 +485,7 @@ img {
 
 .contact_logo {
     display: block;
+    position: relative;
     height: 25em;
     width: 25em;
 }
@@ -1005,6 +1006,13 @@ hr{
   #home {
     height: 50vh;
   }
+
+  .contact_logo {
+    display: block;
+    position: relative;
+    height: 20em;
+    width: 20em;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1110,6 +1118,13 @@ hr{
 
     .gallery_button:before {
       border-radius: 20px;
+    }
+
+    .contact_logo {
+      display: block;
+      position: relative;
+      height: 10em;
+      width: 10em;
     }
 }
 
