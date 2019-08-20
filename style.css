@@ -65,6 +65,7 @@ nav {
 
 .nav-links li {
   list-style: none;
+  border: none;
 }
 
 .nav-links a {
@@ -229,6 +230,7 @@ img {
 #navbarf {
   position: fixed;
   width: 100vw;
+  border: none;
 }
 
 .navbar-toggler-icon {
@@ -240,6 +242,7 @@ img {
   font-size: 18px;
   /*font-family: wattmobile_1;*/
   font-family: 'Roboto', regular;
+  border: none;
   margin: 0;
   font-weight: bold;
 }
@@ -768,6 +771,30 @@ hr{
   color: black;
 }
 
+.card_h {
+  height: 20vh!important;
+}
+
+.btn_linkedin {
+  height: 4vh!important;
+  bottom: 1em!important;
+  background-color: #0077B5;
+  border: none;
+  color: white;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_linkedin:hover {
+  background-color: #00669C;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+}
 
 /**---------------our events------------------*/
 
@@ -854,7 +881,6 @@ hr{
   padding: 25px 0;
   width: 100%;
 }
-
 .socials a:before,
 .socials a:after {
   position: absolute;
