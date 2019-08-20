@@ -166,6 +166,10 @@ nav {
 }
 
 /**---------------GENERAL STYLE-------------**/
+.card_style {
+  background-color: #44DAD2!important;
+}
+
 .no_selection {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -511,23 +515,10 @@ img {
     height: auto;
 }
 
-.spsimg_upv {
+.sponsors_img {
   position:relative !important;
-  /**z-index:1;**/ 
-  width:60% !important; 
-  height:80% !important;
-}
-
-.spsimg_ge {
-  position:relative !important;
-  width:20% !important; 
-  height:20% !important;
-}
-
-.spsimg_ETSID {
-  position:relative !important;
-  width:60% !important; 
-  height:60% !important;
+  width:40% !important; 
+  height:40% !important;
 }
 
 /**---------SPONSORS END---------**/
@@ -548,7 +539,7 @@ img {
   font-size: 30px;
   text-decoration: none;
   box-sizing: border-box;
-  background: linear-gradient(90deg, #0BAA10,#C803CB,#f441a5,#0BAA10);
+  background: linear-gradient(90deg, #44DAD2,#C803CB,#44DAD2,#0BAA10);
   background-size: 500%;
   border-radius: 50px;
 }
@@ -761,6 +752,21 @@ hr{
   top: 30vh;
 }
 
+/**----------MARKETING-----------**/
+#marketing {
+  background-color: #041B1B;
+}
+
+/**----------MOTOR-----------**/
+#motor {
+  background-color: #041B1B;
+}
+
+/**------card title style-----**/
+.card_title {
+  color: black;
+}
+
 
 /**---------------our events------------------*/
 
@@ -959,6 +965,14 @@ background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0
 @media only screen and (max-width: 1260px) {
     .contact_description_style {
       font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sponsors_img {
+      position:relative !important;
+      width:70% !important; 
+      height:70% !important;
     }
 }
 
