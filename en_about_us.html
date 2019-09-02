@@ -63,52 +63,32 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body lang="es">
-	<nav class="navbar navbar-expand-lg sticky-top barra" id="navbarf">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-	    <!--<span class="navbar-toggler-icon"></span>-->
-	    <span> <img src="img/icons/hamburger.png" style="width: 30px;height: 30px;"></span>
-	  </button>
-	  <img src="img/logo/logo2_new.png" class="navbar-brand" alt="Logo" style="height: 40px; width: 30px;"></img>
-
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#home" data-aos="fade-in-down">HOME</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#about" data-aos="fade-in-down">ABOUT US</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#contact" data-aos="fade-in-down">CONTACT</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#sponsors" data-aos="fade-in-down">SPONSORS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#gallery" data-aos="fade-in-down">GALLERY</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="en_index.html#our_events" data-aos="fade-in-down">OUR EVENTS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll="" href="#home" data-aos="fade-in-down">TEAM</a>
-					</li>
-				</ul>
-				<ul class="navbar-nav mt-auto justify-content-end " style="text-align: right;width: auto;">
-						<li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          <img src="img/icons/flags/GB_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="about_us.html"><img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;"> Español</a>
-			          <a class="dropdown-item" href="ca_about_us.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -5px;"> Valencià</a>
-			          <!--<a class="dropdown-item" href="#"><img src="img/icons/flags/RU_flag.png" style="height: 30px; width: 30px; margin-top: -5px;"> Pусский</a>-->
-			        </div>
-			      </li>
-						<li><img src="./img/icons/instagram.png" class="barra_icon" onclick="location.href='https://www.instagram.com/wattmobileupv/'"></li>
-	      		<li><img src="./img/icons/facebook.png" class="barra_icon" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'"></li>
-	      </ul>
-	  </div>
+	<nav class="sticky" id="navBar">
+		<div class="logo"file:///D:/trigo/Escritorio/GIT%20HUB/Wattmobile/Wattmobile/index.html#>
+			<!--<img src="img/logo/logo2_new.png" alt="Wattmobile" style="height: 40px; width: 30px;"></img>-->
+			<h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
+		</div>
+		<ul class="nav-links">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html#contact">Contact</a></li>
+			<li><a href="index.html#sponsors">Sponsors</a></li>
+			<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+		          <a class="dropdown-item" href="en_about_us.html"><img src="img/icons/flags/GB_flag.png" style=" height: 30px; width: 30px; margin-top: -10px;"> EN</a>
+		          <a class="dropdown-item" href="ca_about_us.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -10px;"> VLC</a>	
+		        </div>          
+			</li>
+			<li></li>
+		</ul>
+		<div class="burger">
+			<div class="lin1"></div>
+			<div class="lin2"></div>
+			<div class="lin3"></div>
+		</div>
 	</nav>
 	<!--HOME-->
 	<div id="home" class="container-fluid" style="z-index: 2;">
@@ -138,19 +118,19 @@
 			<div class="row">
 			<!--member 1-->
 			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
+          		<div class="card hovercard card_style">
               <div class="cardheader_e">
               </div>
               <div class="avatar">
                   <img alt="" src="img/disciplines/electronics/javi.png">
               </div>
-              <div class="info">
+              <div class="info card_h">
                   <div class="title">
                       <a target="_blank" href="">Javier Collado      Garcia</a>
                   </div>
                   <div class="desc">Electronics member</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
+                  <div class="desc">School: ETSID</div>
+                  <div class="desc">Polytechnic University of Valencia</div>
               </div>
              	<div class="bottom">
                   <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -159,19 +139,19 @@
       </div>
       <!--member 2-->
 			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
+          <div class="card hovercard card_style">
               <div class="cardheader_e">
               </div>
               <div class="avatar">
                   <img alt="" src="img/disciplines/electronics/vlad.png">
               </div>
-              <div class="info">
+              <div class="info card_h">
                   <div class="title">
                       <a target="_blank" href="">Vladyslav Mazurkevych</a>
                   </div>
                   <div class="desc">Electronics programmer</div>
-                  <div class="desc">Escuela: ETSINF</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
+                  <div class="desc">School: ETSINF</div>
+                  <div class="desc">Polytechnic University of Valencia</div>
               </div>
               <div class="bottom">
                   <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -191,19 +171,19 @@
 			<div class="row">
 			<!--member 1-->
 			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
+          <div class="card hovercard card_style">
               <div class="cardheader_m">
               </div>
               <div class="avatar">
                   <img alt="" src="img/disciplines/electronics/javi.png">
               </div>
-              <div class="info">
+              <div class="info card_h">
                   <div class="title">
                       <a target="_blank" href="">Javier Collado      Garcia</a>
                   </div>
                   <div class="desc">Marketing member</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
+                  <div class="desc">School: ETSID</div>
+                  <div class="desc">Polytechnic University of Valencia</div>
               </div>
              	<div class="bottom">
                   <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -211,26 +191,48 @@
           </div>
       </div>
       <!--member 2-->
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
-              <div class="cardheader_m">
-              </div>
-              <div class="avatar">
-                  <img alt="" src="img/disciplines/electronics/vlad.png">
-              </div>
-              <div class="info">
-                  <div class="title">
-                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
-                  </div>
-                  <div class="desc">Marketing member</div>
-                  <div class="desc">Escuela: ETSINF</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
-              </div>
-              <div class="bottom">
-                  <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
-              </div>
-           </div>
-        </div>
+		<div class="col-lg-3 col-sm-6" data-aos="flip-right">
+	      <div class="card hovercard card_style">
+	          <div class="cardheader_m">
+	          </div>
+	          <div class="avatar">
+	              <img alt="" src="img/disciplines/electronics/vlad.png">
+	          </div>
+	          <div class="info card_h">
+	              <div class="title">
+	                  <a target="_blank" href="">Vladyslav Mazurkevych</a>
+	              </div>
+	              <div class="desc">Marketing member</div>
+	              <div class="desc">School: ETSINF</div>
+	              <div class="desc">Polytechnic University of Valencia</div>
+	          </div>
+	          <div class="bottom">
+	              <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+	          </div>
+	       </div>
+	    </div>
+
+	    <!--member 3-->
+		<div class="col-lg-3 col-sm-6" data-aos="flip-right">
+	      <div class="card hovercard card_style">
+	          <div class="cardheader_m">
+	          </div>
+	          <div class="avatar">
+	              <img alt="" src="img/disciplines/marketing/david.png">
+	          </div>
+	          <div class="info card_h">
+	              <div class="title">
+	                  <a target="_blank" href="">Yishun Dai</a>
+	              </div>
+	              <div class="desc">Marketing member & designer</div>
+	              <div class="desc">School: ETSID</div>
+	              <div class="desc">Polytechnic University of Valencia</div>
+	          </div>
+	          <div class="bottom">
+	              <a href="" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
+	          </div>
+	       </div>
+	    </div>
       </div>
       <br>
   	</div>
@@ -244,19 +246,19 @@
 				<div class="row">
 				<!--member 1-->
 				<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard">
+	          <div class="card hovercard card_style">
 	              <div class="cardheader_s">
 	              </div>
 	              <div class="avatar">
 	                  <img alt="" src="img/disciplines/electronics/javi.png">
 	              </div>
-	              <div class="info">
+	              <div class="info card_h">
 	                  <div class="title">
 	                      <a target="_blank" href="">Javier Collado      Garcia</a>
 	                  </div>
 	                  <div class="desc">Structure member</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	                  <div class="desc">School: ETSID</div>
+	                  <div class="desc">Polytechnic University of Valencia</div>
 	              </div>
 	             	<div class="bottom">
 	                  <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -265,19 +267,19 @@
 	      </div>
 	      <!--member 2-->
 				<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard">
+	          <div class="card hovercard card_style">
 	              <div class="cardheader_s">
 	              </div>
 	              <div class="avatar">
 	                  <img alt="" src="img/disciplines/electronics/vlad.png">
 	              </div>
-	              <div class="info">
+	              <div class="info card_h">
 	                  <div class="title">
 	                      <a target="_blank" href="">Vladyslav Mazurkevych</a>
 	                  </div>
 	                  <div class="desc">Structure member</div>
-	                  <div class="desc">Escuela: ETSINF</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	                  <div class="desc">School: ETSINF</div>
+	                  <div class="desc">Polytechnic University of Valencia</div>
 	              </div>
 	              <div class="bottom">
 	                  <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161/" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -287,19 +289,19 @@
 
 	        <!--member 3-->
 				<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard">
+	          <div class="card hovercard card_style">
 	              <div class="cardheader_s">
 	              </div>
 	              <div class="avatar">
 	                  <img alt="" src="img/disciplines/motor/JoseJuanFernandez.png">
 	              </div>
-	              <div class="info">
+	              <div class="info card_h">
 	                  <div class="title">
 	                      <a target="_blank" href="">José Juan Fernandez</a>
 	                  </div>
 	                  <div class="desc">Structure member</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	                  <div class="desc">School: ETSID</div>
+	                  <div class="desc">Polytechnic University of Valencia</div>
 	              </div>
 	              <div class="bottom">
 	                  <a href="https://www.linkedin.com/in/josé-juan-fernández-pazos-b410a617a" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -308,19 +310,19 @@
 	        </div>
 	        <!--member 4-->
 	        <div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard">
+	          <div class="card hovercard card_style">
 	              <div class="cardheader_s">
 	              </div>
 	              <div class="avatar">
 	                  <img alt="" src="img/disciplines/electronics/adrian.png">
 	              </div>
-	              <div class="info">
+	              <div class="info card_h">
 	                  <div class="title">
 	                      <a target="_blank" href="">Adrian Leordean</a>
 	                  </div>
 	                  <div class="desc">Structure member</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	                  <div class="desc">School: ETSID</div>
+	                  <div class="desc">Polytechnic University of Valencia</div>
 	              </div>
 	              <div class="bottom">
 	                  <a href="linkedin.com/in/cosmin-adrian-leordean-06b0aa17a" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -340,19 +342,19 @@
 			<div class="row">
 			<!--member 1-->
 			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
+          <div class="card hovercard card_style">
               <div class="cardheader_b">
               </div>
               <div class="avatar">
                   <img alt="" src="img/disciplines/electronics/javi.png">
               </div>
-              <div class="info">
+              <div class="info card_h">
                   <div class="title">
                       <a target="_blank" href="">Javier Collado      Garcia</a>
                   </div>
-                  <div class="desc">Electronics member</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
+                  <div class="desc">Motor member</div>
+                  <div class="desc">School: ETSID</div>
+                  <div class="desc">Polytechnic University of Valencia</div>
               </div>
              	<div class="bottom">
                   <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -362,19 +364,19 @@
 
       <!--member 2-->
 			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard">
-              <div class="cardheader_s">
+          <div class="card hovercard card_style">
+              <div class="cardheader_b">
               </div>
               <div class="avatar">
                   <img alt="" src="img/disciplines/motor/JoseJuanFernandez.png">
               </div>
-              <div class="info">
+              <div class="info card_h">
                   <div class="title">
                       <a target="_blank" href="">José Juan Fernandez</a>
                   </div>
                   <div class="desc">Motor member</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
+                  <div class="desc">School: ETSID</div>
+                  <div class="desc">Polytechnic University of Valencia</div>
               </div>
               <div class="bottom">
                   <a href="https://www.linkedin.com/in/josé-juan-fernández-pazos-b410a617a" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -384,19 +386,19 @@
 
       	<!--member 3-->
       	<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard">
-	              <div class="cardheader_s">
+	          <div class="card hovercard card_style">
+	              <div class="cardheader_b">
 	              </div>
 	              <div class="avatar">
 	                  <img alt="" src="img/disciplines/electronics/adrian.png">
 	              </div>
-	              <div class="info">
+	              <div class="info card_h">
 	                  <div class="title">
 	                      <a target="_blank" href="">Adrian Leordean</a>
 	                  </div>
 	                  <div class="desc">Motor member</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
+	                  <div class="desc">School: ETSID</div>
+	                  <div class="desc">Polytechnic University of Valencia</div>
 	              </div>
 	              <div class="bottom">
 	                  <a href="linkedin.com/in/cosmin-adrian-leordean-06b0aa17a" title="LinkedIn" class="btn btn-linkedin btn-lg"><h5>LinkedIn</h5></a>
@@ -418,24 +420,24 @@
         	<div class="col-md-4 col-0"></div>
 
           <div class="col-md-4 col-12" align="center">
-          	<img src="img/logo/logo2_new.png" alt="crafted with love" style="height: 80px;width: 80px;" />
+          	<img src="img/logo/logo2_new_azul.png" alt="crafted with love" style="height: 80px;width: 80px;" />
           	<!--<img src="img/logo/logo-xmas.png" alt="crafted with love" class="center-block" style="height: 40px;width: 40px;" />-->
           </div>
 
           <div class="col-md-2 col-0"></div>
 
           <div class="col-md-1 col-6" align="right">
-          	<img src="img/icons/instagram.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
+          	<img src="img/icons/inst1.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
           </div>
 
           <div class="col-md-1 col-6" align="left">
-          	<img src="img/icons/facebook.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
+          	<img src="img/icons/fb1.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 40px;width: 50px;" />
           </div>
        </div>
        <br>
        <div class="row">
        		<div class="col-xs-12 col-sm-12">
-       			 <h3 align="center" class="footer_text">© 2018 WATTMOBILE UPV. All rights reserved.</h3>
+       			 <h3 align="center" class="footer_text">©2019 WATTMOBILE UPV. All rights reserved.</h3>
        		</div>
        </div> 
       </div>
@@ -463,6 +465,7 @@
   </script>
 
   <!--chat bot-->
+  <!--
   <script> window.intergramId = "-351358483"; 
    window.intergramCustomizations = {
         titleClosed: 'Open chat!',
@@ -476,6 +479,7 @@
     };
 	</script>
   <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+	-->
   <script type="text/javascript" charset="utf-8">
 	  //DETECTS THE POSITION ON THE SCREEN
 		$(document).ready(function() {
