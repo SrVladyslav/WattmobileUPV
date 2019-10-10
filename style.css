@@ -135,7 +135,7 @@ nav {
   }
 
   .burger {
-    display: block;
+    display: block!important;
     cursor: pointer;
   }
 }
@@ -149,7 +149,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }to {
-    opacity: 100;
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -521,8 +521,10 @@ img {
 
 .sponsors_img {
   position:relative !important;
-  width:40% !important; 
-  height:40% !important;
+  /*width:40% !important; 
+  height:40% !important;*/
+  width:auto !important; 
+  height:400px !important;
 }
 
 /**---------SPONSORS END---------**/
