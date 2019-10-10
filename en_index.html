@@ -23,29 +23,20 @@
 	<link rel="stylesheet" type="text/css" href="fonts/fuentes.css">
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 	<!--Calendar styles-->
   	<link rel="stylesheet" href="css/demo.css"/>
   	<link rel="stylesheet" href="css/theme.css"/>
 	<!--effects-->
   	<link rel="stylesheet" type="text/css" href="css/effects.scss">
   	<!--Slider-->
-  	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  	<link rel="stylesheet" href="./css/flexslider.css" type="text/css">
   	<!--animation-->
    	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    	<!--mail-->
-   	<link rel="stylesheet" type="text/css" href="css/mail-form.css">
+   	<link rel="stylesheet" type="text/css" href="./css/mail-form.css">
 	<!--/////////////CSS END///////////////-->
 	
-	<!--/////////////JS///////////////-->
-	<!--Slider-->
-	<script src="js/jquery.flexslider.js"></script>
-	<!--Calendar styles end-->
-	<script type="text/javascript" src="js/window-scroll.js"></script>
-	<link rel="stylesheet" href="nav_style.css">
-  <script src="sticky.js"></script>
-	<!--////////////JS END/////////////-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<nav class="sticky" id="navBar">
@@ -396,6 +387,15 @@
   <script>
     AOS.init();
   </script>
+  	<!--/////////////JS///////////////-->
+	<!--Slider-->
+	<script src="./js/jquery.flexslider.js"></script>
+	<!--Calendar styles end-->
+	<script type="text/javascript" src="./js/window-scroll.js"></script>
+	<link rel="stylesheet" href="./nav_style.css">
+  <script src="./sticky.js"></script>
+	<!--////////////JS END/////////////-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!--Chat bot
   <script> window.intergramId = "-351358483"; 
@@ -439,6 +439,30 @@
 			}
 		});
 	</script>
-	<script src="js/barAnimation.js"></script>
+	<script type="text/javascript" charset="uft-8">
+	    const navSlide = () => {
+			const burger= document.querySelector('.burger');
+			const nav = document.querySelector('.nav-links');
+			const navLinks = document.querySelectorAll('.nav-links li');
+			//Toggle nav
+			burger.addEventListener('click', () => {
+				//document.write("hi");
+				nav.classList.toggle('nav_active');
+
+				//Animate links
+				navLinks.forEach((link, index) =>{
+					if(link.style.animation){
+						link.style.animation = '';
+					} else {
+						link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+					}
+				});
+				//Burger animation
+				burger.classList.toggle('toggle');
+			});
+			
+		}
+		navSlide();
+	</script>
 </body>
 </html>
