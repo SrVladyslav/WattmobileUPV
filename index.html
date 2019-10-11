@@ -19,11 +19,9 @@
 	<!--///////////FONTS END///////////////-->
 
 	<!--/////////////CSS///////////////////-->
-	<link rel="stylesheet" type="text/css" href="css/navbar_style.css">
-	<link rel="stylesheet" type="text/css" href="fonts/fuentes.css">
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/fuentes.css"><<<==== There's no sticky.js -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Calendar styles-->
   	<link rel="stylesheet" href="css/demo.css"/>
   	<link rel="stylesheet" href="css/theme.css"/>
@@ -34,47 +32,26 @@
   	<!--animation-->
    	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    	<!--mail-->
-   	<link rel="stylesheet" type="text/css" href="css/mail-form.css">
-	<!--/////////////CSS END///////////////-->
-	
-	<!--/////////////JS///////////////-->
-	<!--Slider-->
-	<script src="js/jquery.flexslider.js"></script>
-	<!--Calendar styles end-->
-	<script type="text/javascript" src="js/window-scroll.js"></script>
-
-	<script type="text/javascript">
-		/*function myFunction() {
-		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		    document.getElementById("navbarf").className = "barra";
-		  } else {
-		    document.getElementById("navbarf").className = "";
-		  }
-		}*/
-	</script>
-	<link rel="stylesheet" href="nav_style.css">
-  <script src="sticky.js"></script>
-	<!--////////////JS END/////////////-->
+	<link rel="stylesheet" type="text/css" href="css/mail-form.css">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--/////////////CSS END///////////////-->
 </head>
 <body>
 	<nav class="sticky" id="navBar">
 		<div class="logo">
-			<!--<img src="img/logo/logo2_new.png" alt="Wattmobile" style="height: 40px; width: 30px;"></img>-->
-			<h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
+			<img src="img/logo/logo2_new.png" alt="Wattmobile" class="logo-img"></img>
+			<h4 class="wattmobile_font"><a href="/index.html">attmobile</a></h4>
 		</div>
 		<ul class="nav-links">
-			<li><a href="#home">Principal</a></li>
-			<li><a href="#about">Nosotros</a></li>
-			<li><a href="#contact">Contacto</a></li>
-			<li><a href="#sponsors">Patrocinio</a></li>
+			<li><a href="#about" class="t" data-key="nosotros"></a></li>
+			<li><a href="#contact" class="t" data-key="contacto"></a></li>
+			<li><a href="#sponsors" class="t" data-key="patrocinio"></a></li>
+			<li><a href="#gallery" class="t" data-key="galeria"></a></li>
 			<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          <img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
+		        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-		          <a class="dropdown-item" href="en_index.html"><img src="img/icons/flags/GB_flag.png" style=" height: 30px; width: 30px; margin-top: -10px;"> EN</a>
-		          <a class="dropdown-item" href="ca_index.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -10px;"> VLC</a>	
+		        <div class="dropdown-menu flags" aria-labelledby="navbarDropdown" >
 		        </div>          
 			</li>
 			<li></li>
@@ -160,7 +137,7 @@
 
 	<div class="container-fluid" id="about" data-aos="fade-up">
 			<div class="row">
-					<h1 class="title_style" >Nosotros</h1>
+					<h1 class="title_style t" data-key="Nosotros"></h1>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-7">
@@ -172,7 +149,7 @@
 											<center><img src="img/icons/electronics2.png" class="image-cropper image_dimensions"></center>
 									</div>
 									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Electrónica</p></center>
+											<center><p class="group_style t" data-key="electronica"></p></center>
 									</div>
 								</div>
 								<!--MARKETING-->
@@ -181,7 +158,7 @@
 											<center><img src="img/icons/management.png" class="image-cropper image_dimensions" ></center>
 									</div>
 									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Marketing</p></center>
+											<center><p class="group_style t" data-key="marketing"></p></center>
 									</div>
 								</div>
 								<!--STRUCTURE-->
@@ -190,7 +167,7 @@
 											<center><img src="img/icons/design.png" class="image-cropper image_dimensions"></center>
 									</div>
 									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Estructura</p></center>
+											<center><p class="group_style t" data-key="estructura"></p></center>
 									</div>
 								</div>
 								<!--MOTOR AND BATTERY-->
@@ -199,7 +176,7 @@
 											<center><img src="img/icons/engine.png" class="image-cropper image_dimensions" ></center>
 									</div>
 									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Motor & Bateria</p></center>
+											<center><p class="group_style t" data-key="motor_bateria"></p></center>
 									</div>
 								</div>
 								<br><br><br>
@@ -207,12 +184,8 @@
 							<!--GROUPS END-->
 				</div>
 				<div class="col-xs-12 col-sm-5 about_us_style_description" data-aos="fade-up">
-					<h1 class="subtitle_style">Descripción general</h1>
-					<p style="text-align: justify;color: white;">
-							Un proyecto fundamentado en el aprendizaje continuo y la puesta en práctica de los conceptos teóricos que adquirimos en la Universidad. Propulsado por las bulliciosas mentes de algunos estudiantes de la Universitat Politècnica de València, Wattmobile UPV toma desde sus raíces un compromiso determinante con uno de los problemas contemporáneos más trascendentales, el calentamiento global producido por la incesante emisión de gases contaminantes a la atmósfera.
-							<br><br>
-							Es por esto que en Wattmobile UPV apostamos por la conversión de vehículos de combustión en eléctricos, y es nuestro compromiso mostrar que a base de trabajo en equipo e implicación podemos ser capaces de dar forma a un prototipo competitivo, capaz de batirse al más alto nivel con emisiones 0.
-					</p>
+					<h1 class="subtitle_style t" data-key="descripcion_general"></h1>
+					<p style="text-align: justify;color: white;" class="t" data-key="descripcion"></p>
 				</div>
 			</div>
 			<br>
@@ -225,7 +198,7 @@
 	<div class="container-fluid" id="contact">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12" >
-					<h1 class="title_style">Contacto</h1>
+					<h1 class="title_style t" data-key="contacto"></h1>
 				</div>
 			</div>
 			<!--CONTACT DESCRIPTION-->
@@ -242,27 +215,26 @@
 
 					      <!--Header-->
 					      <div class="text-center">
-					        <h3 class="white-text mb-5 mt-4 font-weight-bold text-uppercase"><strong>Contacto</strong> <a class="green-text font-weight-bold"><strong>
-					              Us</strong></a></h3>
+					        <h3 class="white-text mb-5 mt-4 font-weight-bold text-uppercase t" data-key="contactanos"></h3>
 					      </div>
 
 					      <div class="md-form">
-					      	<label for="form100">Nombre</label>
+					      	<label for="form100" class="t" data-key="nombre"></label>
 					        <input type="text" id="form100" class="form-control">
 					      </div>
 
 					      <div class="md-form">
-					      	<label for="form101">Correo</label>
+					      	<label for="form101" class="t" data-key="correo"></label>
 					        <input type="text" id="form101" class="form-control">
 					      </div>
 
 					      <div class="md-form">
-					      	<label for="form102">Subject</label>
+					      	<label for="form102" class="t" data-key="subject"></label>
 					        <input type="text" id="form102" class="form-control">
 					      </div>
 
 					      <div class="md-form">
-					      	<label for="form103">Tu mensaje</label>
+					      	<label for="form103" class="t" data-key="tu_mensaje"></label>
 					        <textarea id="form103" class="md-textarea form-control" rows="5"></textarea>
 					      </div>
 
@@ -271,7 +243,7 @@
 
 					        <!--Grid column-->
 					        <div class="text-center col-md-12 mt-3 mb-2">
-					          <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="background-color: #44DAD2;">Enviar</button>
+					          <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1 t" style="background-color: #44DAD2;" data-key="enviar"></button>
 					        </div>
 					        <!--Grid column-->
 					      </div>
@@ -308,7 +280,7 @@
 	<div class="container-fluid" id="sponsors" style="z-index: 5;" data-aos="fade-up">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
-						<h1 style="color: white!important;" class="title_style">Sponsors</h1>			
+						<h1 style="color: white!important;" class="title_style t" data-key="patrocinio"></h1>			
 				</div>
 			</div>
 			<div id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel"  data-interval="5000">
@@ -325,11 +297,11 @@
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
+			    <span class="sr-only t" data-key="anterior"></span>
 			  </a>
 			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
+			    <span class="sr-only t" data-key="siguiente"></span>
 			  </a>
 			</div>
 			<br><br>
@@ -340,7 +312,7 @@
 	<div class="container-fluid" id="gallery" style="z-index: 5;" data-aos="fade-up">
 			<div class="row contained justify-content-center" style="top: 40%!important;position: relative;">
 				<div class="col-xs-12">
-						<a href="galeria.html" class="gallery_button" style="color: white">Galeria</a>
+						<a href="galeria.html" class="gallery_button t" style="color: white" data-key="galeria"></a>
 				</div>
 			</div>
 			<br>
@@ -435,18 +407,18 @@
 
           <div class="col-md-2 col-0"></div>
 
-          <div class="col-md-1 col-6" align="right">
-          	<img src="img/icons/inst1.png" onclick="location.href='https://www.instagram.com/wattmobileupv/'"	alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
+          <div class="col-md-1 col-6" align="right" style="cursor:pointer">
+          	<img src="img/icons/inst1.png" onclick="window.open('https\:\/\/www.instagram.com/wattmobileupv/','_blank')"	alt="instagram" class="center-block" style="height: 40px;width: 40px;" />
           </div>
 
-          <div class="col-md-1 col-6" align="left">
-          	<img src="img/icons/fb1.png" onclick="location.href='https://es-es.facebook.com/Wattmobile-UPV-750063795162288/'" alt="instagram" class="center-block" style="height: 40px;width: 50px;" />
+          <div class="col-md-1 col-6" align="left" style="cursor:pointer">
+          	<img src="img/icons/fb1.png" onclick="window.open('https\:\/\/www.instagram.com/wattmobileupv/','_blank')" alt="instagram" class="center-block" style="height: 40px;width: 50px;" />
           </div>
        </div>
        <br>
        <div class="row">
        		<div class="col-xs-12 col-sm-12">
-       			 <h3 align="center" class="footer_text">©2019 WATTMOBILE UPV. Todos los derechos reservados.</h3>
+       			 <h3 align="center" class="footer_text">©2019 WATTMOBILE UPV. <small class="t" data-key="derechos_reservados"></small></h3>
        		</div>
        </div> 
       </div>
@@ -458,19 +430,29 @@
   	<div class="callout-header">Wattmobile news!⚠️</div>
   	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   	<div class="callout-container">
-    <p>Actualmente esta página esta siendo remodelada.Sentimos los fallos 😅</p>
-  	</div>
+		  <p>Actualmente esta página esta siendo remodelada.Sentimos los fallos 😅</p>
+		</div>
 	</div>-->
+		<!-- JQuery -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- Translations -->
+		<script src="http://i18njs.com/js/i18n.min.js"></script>
+		<script src="js/i18n/locales.js"></script>
+		<script src="js/i18n/index.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!--CALENDAR SCRIPTS-->
-	<script type="text/javascript" src="js/caleandar.js"></script>
-	<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
-	<!--animation-->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!--Slider-->
+		<script src="js/jquery.flexslider.js"></script>
+		<!--Calendar styles end-->
+		<script type="text/javascript" src="js/window-scroll.js"></script>
+		<!--CALENDAR SCRIPTS-->
+		<script type="text/javascript" src="js/caleandar.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>     <!--DATA EVENTS-->
+		<!--animation-->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- <script src="sticky.js"></script> <<<==== There's no sticky.js -->
   <script>
-    AOS.init();
+	AOS.init();
   </script>
 
   <!--Chat bot
@@ -540,6 +522,10 @@
 		}
 
 		navSlide();
+
+		$('.nav-links>li').on('click', function(){
+			$('.burger.toggle').trigger('click');
+		});
 	</script>
 </body>
 </html>
