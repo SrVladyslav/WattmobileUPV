@@ -49,6 +49,7 @@ function createCalendar(calendar, element, adjuster){
     calendar = new Calendar(calendar.Model, calendar.Options, newDate);
     element.innerHTML = '';
   }else{
+    console.log( calendar, element, adjuster);
     for(var key in calendar.Options){
       typeof calendar.Options[key] != 'function' && typeof calendar.Options[key] != 'object' && calendar.Options[key]?element.className += " " + key + "-" + calendar.Options[key]:0;
     }
@@ -294,6 +295,8 @@ function createCalendar(calendar, element, adjuster){
 }
 
 function caleandar(el, data, settings){
-  var obj = new Calendar(data, settings);
-  createCalendar(obj, el);
+  if(el){
+    var obj = new Calendar(data, settings);
+    createCalendar(obj, el);
+  }
 }
