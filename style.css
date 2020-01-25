@@ -472,9 +472,10 @@ img {
   margin-bottom: 2.5em;
   width: 80%!important;
   color: white;
-  font-size: 3em;
+  font-size: 2.4em;
+  display: flex;
   align-items: center;
-  text-align: justify;
+  justify-content: center;
 }
 
 .flexcol {
