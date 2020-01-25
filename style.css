@@ -534,17 +534,18 @@ img {
   width: calc(34% + 10em);
   height: 30em;
   box-sizing: border-box;
-  border-right: 14em solid #041B1B;
+  border-right: 14em solid black;
   border-top: 30em solid transparent; 
-  background:  url('./img/photos/motor.jfif');
+  background:  url('./img/photos/motocontrolador.png');
   background-size: 42em;
-  background-position: -4em -2em;
+  
+  background-position: -4em 1em;
 }
 
 
 .desc_motor {
   margin: 0;
-  background-color: #041B1B;
+  background-color: black;
   width: 66%;
   height: 30em;
   box-sizing: border-box;
@@ -573,7 +574,7 @@ img {
   box-sizing: border-box;
   border-left: 25em solid black;
   border-top: 30em solid transparent;
-  background:  url('./img/photos/bateria.png');
+  background:  url('./img/photos/bateriag.png');
   background-size: 60em;
   background-position: -15em -30em;
 }
@@ -736,7 +737,7 @@ a {
 
 #gallery {
   background-color: black;
-  background: url(img/gallery/gallery-bg.jpg);
+  background: url('img/gallery/gallery-bg.jpg');
   background-position: center;
   background-size: cover;
   width:100%;
@@ -893,7 +894,7 @@ hr{
 
 #home {
     background-color: black!important;
-    background: url('./img/people/hero3.jpg');
+    background: url('./img/photos/render1.jpeg');
     background-size: cover;
     margin-bottom: 0!important;
 }
