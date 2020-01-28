@@ -528,7 +528,7 @@ img {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   background:  url('./img/photos/render1.jpeg');
   background-size: 50em;
-  background-position: -14em -22em;
+  background-position: 1em -22em;
 }
 
 
@@ -544,7 +544,7 @@ img {
   background:  url('./img/photos/motocontrolador.png');
   background-size: 42em;
   
-  background-position: -4em 1em;
+  background-position: -4em 0em;
 }
 
 
@@ -582,7 +582,7 @@ img {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
   background:  url('./img/photos/bateriag.png');
   background-size: 60em;
-  background-position: -15em -30em;
+  background-position: 8em -2em;
 }
 
 /**-----------DESC--END-----**/
