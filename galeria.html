@@ -68,12 +68,11 @@
       <li><a href="index.html#contact">Contacto</a></li>
       <li><a href="index.html#sponsors">Patrocinio</a></li>
       <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/icons/flags/ES_flag.png" style="height: 30px; width: 30px; margin-top: -5px;">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ES
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-              <a class="dropdown-item" href="gallery.html"><img src="img/icons/flags/GB_flag.png" style=" height: 30px; width: 30px; margin-top: -10px;"> EN</a>
-              <a class="dropdown-item" href="ca_galeria.html"><img src="img/icons/flags/CA_flag.png" style="height: 30px; width: 30px; margin-top: -10px;"> VLC</a>  
+              <a class="dropdown-item" href="gallery.html">EN</a>
+              <a class="dropdown-item" href="ca_galeria.html">VLC</a>  
             </div>          
       </li>
       <li></li>
@@ -85,7 +84,7 @@
     </div>
   </nav>
   <!--HOME-->
-  <div id="home" class="container-fluid" style="z-index: 2;">
+  <div id="home1" class="container-fluid" style="z-index: 2;">
     <div class="row">
       <div class="col-xs-12">
         <!--Christmas
@@ -116,7 +115,7 @@
 
           <div class="col-md-6 col-lg-4 item zoom-on-hover">
             <a class="lightbox" href="img/gallery/car.PNG">
-              <img class="img-fluid image" src="img/gallery/car.PNG">
+              <img class="img-fluid image" src="img/gallery/render1.jpeg">
             </a>
           </div>
 
@@ -127,14 +126,38 @@
           </div>
 
           <div class="col-md-6 col-lg-4 item zoom-on-hover">
+            <a class="lightbox" href="img/gallery/puerta.JPG">
+              <img class="img-fluid image" src="img/gallery/puerta.JPG">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 item zoom-on-hover">
             <a class="lightbox" href="img/gallery/hero1.jpeg">
-              <img class="img-fluid image" src="img/gallery/hero1.jpeg">
+              <img class="img-fluid image" src="img/gallery/motor.jfif">
             </a>
           </div>
 
           <div class="col-md-6 col-lg-4 item zoom-on-hover">
             <a class="lightbox" href="img/gallery/puerta.JPG">
-              <img class="img-fluid image" src="img/gallery/puerta.JPG">
+              <img class="img-fluid image" src="img/gallery/controlador.jfif">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 item zoom-on-hover">
+            <a class="lightbox" href="img/gallery/hero1.jpeg">
+              <img class="img-fluid image" src="img/gallery/bateria.jfif">
+            </a>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 item zoom-on-hover">
+            <a class="lightbox" href="img/gallery/hero1.jpeg">
+              <img class="img-fluid image" src="img/gallery/silla.jfif">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 item zoom-on-hover">
+            <a class="lightbox" href="img/gallery/hero1.jpeg">
+              <img class="img-fluid image" src="img/gallery/silla2.jfif">
             </a>
           </div>
         </div>
@@ -165,7 +188,7 @@
        <br>
        <div class="row">
           <div class="col-xs-12 col-sm-12">
-             <h3 align="center" class="footer_text">©2019 WATTMOBILE UPV. Todos los derechos reservados.</h3>
+             <h3 align="center" class="footer_text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
           </div>
        </div> 
       </div>
@@ -208,6 +231,33 @@
   <script>
       baguetteBox.run('.compact-gallery',{animation:'slideIn'});
   </script>
+  <script type="text/javascript" charset="utf-8">
+    //DETECTS THE POSITION ON THE SCREEN
+    $(document).ready(function() {
+      if($(document).scrollTop() <= 2) {
+        $('#navBar').addClass('header_color');
+        $('#navBar').removeClass('barra');
+        $('#nav-links').addClass('barOnTop');
+      }
+      else {
+        $('#navBar').addClass('barra');
+        $('#navBar').removeClass('header_color');
+        $('#nav-links').removeClass('barOnTop');
+      }
+    });
+    $(window).scroll(function() {
+      if($(document).scrollTop() <= 2) {
+        $('#navBar').addClass('header_color');
+        $('#navBar').removeClass('barra');
+        $('#nav-links').addClass('barOnTop');
+      }
+      else {
+        $('#navBar').addClass('barra');
+        $('#navBar').removeClass('header_color');
+        $('#nav-links').removeClass('barOnTop');
+      }
+    });
+  </script>
   <script type="text/javascript" charset="uft-8">
       const navSlide = () => {
       const burger= document.querySelector('.burger');
@@ -231,6 +281,7 @@
       });
       
     }
+
     navSlide();
   </script>
 </body>

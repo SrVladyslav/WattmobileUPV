@@ -2,7 +2,7 @@ html{
 	height: 100%;
   /*background-image: url(img/logo/logo-big.png);*/
     /**font-family: 'Roboto', sans-serif;*/
-  background-color: black;
+  background-color: black!important;
 }
 body {
     margin: 0em auto;
@@ -13,7 +13,7 @@ body {
     -khtml-user-select: none;
     -ms-user-select:none;
     font-family: 'Roboto', sans-serif;
-    background-color: black;
+    background-color: black!important;
     overflow-x: hidden;
 }
 /**Animated Bar**/
@@ -29,6 +29,16 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: black;
+}
+
+.mail {
+  width: 25%!important;
+  height: auto;
+  display: flex; 
+}
+
+.lmail {
+  margin-top: 25%!important;
 }
 
 .sticky {
@@ -505,6 +515,12 @@ img {
   width: 100%!important;
 }
 
+#team3 {
+  display: flex;
+  margin: 0;
+  width: 100%!important;
+}
+
 .equipo {
   margin: 0;
   background-color: black;
@@ -585,6 +601,235 @@ img {
   background-position: 8em -2em;
 }
 
+@media only screen and (max-width: 1200px) {
+  .bateriaimg {
+    background-size: 40em;
+    background-position: 10em -18em;
+  }
+
+  .motor {
+    background-size: 42em;
+    background-position: -4em 0em;
+  }
+
+  .equipoimg {
+    background-size: 50em;
+    background-position: 1em -22em;
+  }
+
+  #home ,#home1{
+    background-size: 80em!important;
+    background-position: -5em 2em!important;    
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  #home ,#home1{
+    background-size: 75em!important;
+    background-position: -5em 5em!important;    
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .bateriaimg {
+    background-size: 38em;
+    background-position: 5em 5em;
+  }
+
+  .desc {
+    font-size: 1.5em!important;
+  }
+
+  .d1 {
+    font-size: 1.4em!important;
+  }
+
+  .desc_motor {
+    font-size: 0.7em;
+  }
+
+  .bateria {
+    font-size: 0.7em;
+  }
+
+  .equipo {
+    font-size: 0.7em;
+  }
+
+  .motor {
+    background-size: 42em;
+    background-position: -4em 0em;
+    clip-path: polygon(0 0, 90% 0, 50% 100%, 0 100%);
+  }
+
+  .equipoimg {
+    background-size: 50em;
+    background-position: 1em -22em;
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .bateriaimg {
+    background-size: 37em;
+    background-position: 0em 6em;
+  }
+
+  .motor {
+    background-size: 36em;
+    background-position: -6em 1.5em;
+  }
+
+  .equipoimg {
+    background-size: 45em;
+    background-position: 1em -19em;
+  }
+
+  .desc {
+    font-size: 1.3em!important;
+  }
+
+  .d1 {
+    font-size: 1.2em!important;
+  }
+
+  .desc_motor {
+    font-size: 0.5em;
+  }
+
+  .bateria {
+    font-size: 0.5em;
+  }
+
+  .equipo {
+    font-size: 0.5em;
+  }
+
+  #team1 {
+    flex-direction: row;
+  }
+
+  #home ,#home1{
+    background-size: 50em!important;
+    background-position: -5em 0em!important;    
+  }
+}
+
+
+@media only screen and (max-width: 575px) {
+  .bateriaimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 25em;
+    background-position: 4.5em -2em;
+    height: 10em;
+  }
+
+  .motor {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 25em;
+    background-position: 4.5em -2em;
+    height: 10em;
+  }
+
+  .equipoimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 30em;
+    background-position: 0em 0em;
+    height: 15em!important;
+    width: 100%!important;
+  }
+
+  .spec {
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 477px) {
+  .equipoimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 30em;
+    background-position: -2em 0em;
+    height: 15em!important;
+    width: 100%!important;
+  }
+
+  .desc {
+    font-size: 1em!important;
+  }
+
+  #home ,#home1{
+    background-size: 40em!important;
+    background-position: -5em 2em!important;    
+  }
+}
+
+
+@media only screen and (max-width: 435px) {
+  .bateriaimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 25em;
+    background-position: 0em -2em;
+    height: 10em;
+  }
+
+  .motor {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 25em;
+    background-position: 0em -2em;
+    height: 10em;
+  }
+
+  .equipoimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 25em;
+    background-position: -1em -1em;
+    height: 10em!important;
+    width: 100%!important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .bateriaimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 20em;
+    background-position: -4em 0em;
+    height: 10em;
+  }
+
+  .motor {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 20em;
+    background-position: -4em 0em;
+    height: 10em;
+  }
+
+  .equipoimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 20em;
+    background-position: -2em 0em;
+    height: 10em!important;
+    width: 100%!important;
+  }
+
+  .desc {
+    font-size: 0.8em!important;
+  }
+
+  .d1 {
+    font-size: 0.7em!important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .equipoimg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-size: 15em;
+    background-position: 0em 0em;
+    height: 8em!important;
+    width: 100%!important;
+  }
+}
 /**-----------DESC--END-----**/
 
 /**---------ABOUT US--------------**/
@@ -632,6 +877,7 @@ img {
     height: auto;*/
     display: inline-block;
     margin: 0,auto; 
+    margin-bottom: 2em;
 }
 
 .contact_style_text {
@@ -894,11 +1140,12 @@ hr{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-#home {
+#home ,#home1{
     height: 100vh;
 }
 
-#home {
+
+#home ,#home1{
     background-color: black!important;
     background: url('./img/photos/render1.jpeg');
     background-size: cover;
@@ -1197,7 +1444,7 @@ hr{
     top: 20vh;
   }
 
-  #home {
+  #home ,#home1{
     height: 50vh;
   }
 
