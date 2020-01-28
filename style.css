@@ -510,21 +510,22 @@ img {
   background-color: black;
   width: 48%;
   height: 30em;
-  box-sizing: border-box;
+  box-sizing: border-box!important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;x
 }
 
 
 .equipoimg {
   margin: 0;
   background-color: yellow;
-  width: calc(52% + 10em);
-  height: 30em;
-  box-sizing: border-box;
-  border-left: 14em solid black;
-  border-bottom: 30em solid transparent;
+  width: calc(52% + 10em)!important;
+  height: 30em!important;
+  /*box-sizing: border-box!important;
+  border-left: 14em solid black!important;
+  border-bottom: 30em solid transparent!important;*/
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   background:  url('./img/photos/render1.jpeg');
   background-size: 50em;
   background-position: -14em -22em;
@@ -534,11 +535,12 @@ img {
 .motor {
   margin: 0;
   background-color: black;
-  width: calc(34% + 10em);
+  width: calc(40% + 10em);
   height: 30em;
-  box-sizing: border-box;
+  /*box-sizing: border-box;
   border-right: 14em solid black;
-  border-top: 30em solid transparent; 
+  border-top: 30em solid transparent; */
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
   background:  url('./img/photos/motocontrolador.png');
   background-size: 42em;
   
@@ -572,11 +574,12 @@ img {
 .bateriaimg {
   margin: 0;
   background-color: yellow;
-  width: calc(70% + 10em);
+  width: calc(75% + 10em);
   height: 30em;
-  box-sizing: border-box;
+  /*box-sizing: border-box;
   border-left: 25em solid black;
-  border-top: 30em solid transparent;
+  border-top: 30em solid transparent;*/
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
   background:  url('./img/photos/bateriag.png');
   background-size: 60em;
   background-position: -15em -30em;
