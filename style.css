@@ -676,6 +676,10 @@ img {
 
 
 @media only screen and (max-width: 760px) {
+  .cd {
+    width: 100%!important;
+  }
+
   .bateriaimg {
     background-size: 37em;
     background-position: 0em 6em;
@@ -1192,8 +1196,9 @@ hr{
 }
 
 .card_h {
-  min-height: 10em!important;
+  min-height: 11em!important;
   height: 100%!important;
+
 }
 
 .btn_linkedin {
@@ -1347,6 +1352,20 @@ hr{
   font-size: 20px;
 }
 
+
+.electronics {
+  margin-top:  2.5em!important;
+}
+
+.cd {
+  width: 60%;
+}
+
+.cd1 {
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+}
 
 /**animation of the title**/
 
