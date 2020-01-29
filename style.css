@@ -31,6 +31,11 @@ nav {
   background-color: black;
 }
 
+.desc1 {
+  font-size: 0.9em!important;
+  color: black;
+}
+
 .mail {
   width: 25%!important;
   height: auto;
@@ -178,7 +183,7 @@ nav {
 
 /**---------------GENERAL STYLE-------------**/
 .card_style {
-  background-color: #44DAD2!important;
+  background-color: white!important;
 }
 
 .no_selection {
@@ -1187,7 +1192,8 @@ hr{
 }
 
 .card_h {
-  height: 20vh!important;
+  min-height: 10em!important;
+  height: 100%!important;
 }
 
 .btn_linkedin {
