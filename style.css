@@ -31,6 +31,16 @@ nav {
   background-color: black;
 }
 
+/**fotos arriba, fotos abajo**/
+.up {
+  display:  none!important;
+}
+
+.down {
+  display: block!important;
+}
+
+
 .desc1 {
   font-size: 0.9em!important;
   color: black;
@@ -735,9 +745,10 @@ img {
   }
 
   .motor {
+    background:  url('./img/photos/motocontroladorm.png');
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background-size: 25em;
-    background-position: 4.5em -2em;
+    background-size: 27em;
+    background-position: 3em -4em;
     height: 10em;
   }
 
@@ -751,6 +762,15 @@ img {
 
   .spec {
     letter-spacing: 1px;
+  }
+  /**fotos arriba, fotos abajo**/
+  .up {
+    display:  block!important;
+    margin-top: 0.5em;
+  }
+
+  .down {
+    display: none!important;
   }
 }
 
@@ -1366,6 +1386,7 @@ hr{
   align-items: center!important;
   justify-content: center!important;
 }
+
 
 /**animation of the title**/
 
