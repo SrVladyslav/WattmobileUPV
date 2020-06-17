@@ -53,6 +53,7 @@
   </script>
   <link rel="stylesheet" href="nav_style.css">
   <script src="sticky.js"></script>
+  <script src="./js/lang.js" type="text/javascript" charset="utf-8"></script>
   <!--////////////JS END/////////////-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -63,18 +64,19 @@
       <h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
     </div>
     <ul class="nav-links">
-      <li><a href="en_index.html#home">Home</a></li>
-      <li><a href="en_index.html#about">About</a></li>
-      <li><a href="en_index.html#contact">Contact</a></li>
-      <li><a href="en_index.html#sponsors">Sponsors</a></li>
+      <li><a href="index.html#home" data-translate="bar-home">Home</a></li>
+      <li><a href="index.html#about" data-translate="bar-about-us">About</a></li>
+      <li><a href="index.html#contact" data-translate="bar-contact">Contact</a></li>
+      <li><a href="index.html#sponsors" data-translate="bar-sponsors">Sponsors</a></li>
       <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              EN
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-              <a class="dropdown-item" href="ca_galeria.html">VLC</a>
-              <a class="dropdown-item" href="galeria.html">ES</a> 
-            </div>          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
+            ES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+            <a class="dropdown-item" onclick="change_to('es');">ES</a>
+            <a class="dropdown-item" onclick="change_to('en');">EN</a>
+            <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>	
+          </div>          
       </li>
       <li></li>
     </ul>
@@ -92,7 +94,7 @@
         <h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
         <div class="bw-gradient">
           <!--Title-->
-          <div class="title_main_style">GALLERY</div>
+          <div class="title_main_style" data-translate="gallery-title">GALLERY</div>
           <!--Christmas
           <h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
         </div>
@@ -106,7 +108,7 @@
   <section class="gallery-block compact-gallery" style="margin-top: 0;">
       <div class="container-fluid">
         <div class="row">
-          <h1 class="title_style">PHOTOS</h1>
+          <h1 class="title_style" data-translate="photos">PHOTOS</h1>
         </div>
         <div class="row no-gutters">
           <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -173,9 +175,9 @@
        <br>
        <div class="row">
           <div class="col-xs-12 col-sm-12">
-             <h3 align="center" class="footer_text">©2020 WATTMOBILE UPV. All rights reserved.</h3>
+            <h3 class="footer_text" data-translate="footer-text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
           </div>
-       </div> 
+        </div> 
       </div>
   </footer>
   <!--FOOTER-END-->
@@ -269,5 +271,55 @@
 
     navSlide();
   </script>
+  <!--Lang-->
+	<script>
+		// Lang info
+		var langs = ['en', 'es','vlc']
+		var lang_index = 0
+		
+		// The page will appear in english
+		var current_lang = langs[lang_index]
+
+
+		window.change_lang = function() {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			lang_index = ++lang_index % 2
+			current_lang = langs[lang_index]
+			document.getElementById('nav-but').innerHTML = past_lang.toUpperCase()
+			translate()
+		}
+
+		window.change_to = function(lang) {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			if('en' == lang){
+				lang_index = 0
+			}else if('es' == lang){
+				lang_index = 1
+			}else if('vlc' == lang){
+				lang_index = 2
+			}else{
+				lang_index = 0
+			}
+			current_lang = lang
+			translate()
+		}
+
+		function translate() {
+			$("[data-translate]").each(function(){
+				var key = $(this).data('translate')
+				$(this).html(dictionary[key][current_lang] || "N/A")
+			});
+		}
+
+		translate();
+	</script>
+	<script>
+		/**link to id**/
+		window.addEventListener("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 80);
+        });
+	</script>
 </body>
 </html>

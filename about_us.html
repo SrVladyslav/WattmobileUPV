@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta content="WATTMOBILE UPV - Grupo de estudiantes en un proyecto de transformacion de un coche de combustion a un electrico" name="description">
 	<!--Fav-->
-  <link href="img/logo/logo2_new.png" rel="shortcut icon">
+  	<link href="img/logo/logo2_new.png" rel="shortcut icon">
 	<!--/////////PAGE DESIGN END///////////-->
 
 	<!--//////////////FONTS////////////////-->
@@ -25,14 +25,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<!--Calendar styles-->
-  <link rel="stylesheet" href="css/demo.css"/>
-  <link rel="stylesheet" href="css/theme.css"/>
-	<!--effects-->
-  <link rel="stylesheet" type="text/css" href="css/effects.scss">
-  <!--Slider-->
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <!--animation-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/demo.css"/>
+	<link rel="stylesheet" href="css/theme.css"/>
+		<!--effects-->
+	<link rel="stylesheet" type="text/css" href="css/effects.scss">
+	<!--Slider-->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<!--animation-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!--/////////////CSS END///////////////-->
 	
 	<!--/////////////JS///////////////-->
@@ -44,21 +44,10 @@
 			var hT = $('#scroll-to').offset().top, hH = $('#scroll-to').outerHeight(), wH = $(window).height(), wS = $(this).scrollTop();
 			if (wS > (hT+hH-wH)){ console.log('H1 on the view!'); } });
 	</script>
-  
-	<script type="text/javascript" charset="utf-8">
-  	$(window).load(function() {
-	    $('.flexslider').flexslider();
-	  });
-	  //DETECTS THE POSITION ON THE SCREEN
-	  /*window.onscroll = function() {aboutUsScroll()};
-		function aboutUsScroll() {
-		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-		    document.getElementById("myImg").className = "slideUp";
-		  }
-		}*/
-	</script>
+
 	<link rel="stylesheet" href="nav_style.css">
-  <script src="sticky.js"></script>
+	<script src="sticky.js"></script>
+	<script src="./js/lang.js" type="text/javascript" charset="utf-8"></script>
 	<!--////////////JS END/////////////-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -69,18 +58,19 @@
 			<h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
 		</div>
 		<ul class="nav-links">
-			<li><a href="index.html#home">Principal</a></li>
-			<li><a href="index.html#about">Nosotros</a></li>
-			<li><a href="index.html#contact">Contacto</a></li>
-			<li><a href="index.html#sponsors">Patrocinio</a></li>
+			<li><a href="index.html#home" data-translate="bar-home">Principal</a></li>
+			<li><a href="#home" data-translate="bar-about-us">Nosotros</a></li>
+			<li><a href="index.html#contact" data-translate="bar-contact">Contacto</a></li>
+			<li><a href="index.html#sponsors" data-translate="bar-sponsors">Patrocinio</a></li>
 			<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          ES
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-		          <a class="dropdown-item" href="en_about_us.html">EN</a>
-		          <a class="dropdown-item" href="ca_about_us.html">VLC</a>	
-		        </div>          
+		        <a class="nav-link dropdown-toggle" data-translate="bar-lang" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					ES
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+					  <a class="dropdown-item" onclick="change_to('es');">ES</a>
+					  <a class="dropdown-item" onclick="change_to('en');">EN</a>
+					  <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>	
+				  </div>          
 			</li>
 			<li></li>
 		</ul>
@@ -100,7 +90,7 @@
 				<h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
 				<div class="bw-gradient">
         	<!--Title-->
-					<div class="title_main_style">EL EQUIPO</div>
+					<div class="title_main_style" data-translate="team">EL EQUIPO</div>
 					<!--Christmas
 					<h1 class="title_main_style" style="font-family: Tangerine;"><i>Merry Christmas!</i></h1>-->
         </div>
@@ -122,9 +112,9 @@
 	                <div class="title">
 	                    <a target="_blank" href="" class="card_title">Javier Collado      Garcia</a>
 	                </div>
-	                <div class="desc1">Miembro de electronica</div>
-	                <div class="desc1">Escuela: ETSID</div>
-	                <div class="desc1">Universidad Politecnica de Valencia</div>
+	                <div class="desc1" data-translate="team_electronics">Miembro de electronica</div>
+	                <div class="desc1" data-translate="team_school_ETSID">Escuela: ETSID</div>
+	                <div class="desc1" data-translate="team_university">Universidad Politecnica de Valencia</div>
 	            </div>
 	            <div class="bottom" >
 	                <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn_linkedin" ><h5>LinkedIn</h5></a>
@@ -143,9 +133,9 @@
                     <div class="title">
                         <a target="_blank" href="" class="card_title">José Juan Fernandez</a>
                     </div>
-                    <div class="desc1">Miembro de: <br> - Estructuras <br> - Electrónica <br> - Motor</div>
-                    <div class="desc1">Escuela: ETSID</div>
-                    <div class="desc1">Universidad Politecnica de Valencia</div>
+                    <div class="desc1" data-translate="jose-juan">Miembro de: <br> - Estructuras <br> - Electrónica <br> - Motor</div>
+                    <div class="desc1" data-translate="team_school_ETSID">Escuela: ETSID</div>
+                    <div class="desc1" data-translate="team_university">Universidad Politecnica de Valencia</div>
                 </div>
                 <div class="bottom">
                     <a href="https://www.linkedin.com/in/josé-juan-fernández-pazos-b410a617a" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
@@ -166,9 +156,9 @@
 	                <div class="title">
 	                    <a target="_blank" href="" class="card_title">Vladyslav Mazurkevych</a>
 	                </div>
-	                <div class="desc1">Programador de electronica</div>
-	                <div class="desc1">Escuela: ETSINF</div>
-	                <div class="desc1">Universidad Politecnica de Valencia</div>
+	                <div class="desc1" data-translate="team_programmer">Programador y miembro de electronica</div>
+	                <div class="desc1" data-translate="team_school_ETSINF">Escuela: ETSINF</div>
+	                <div class="desc1" data-translate="team_university">Universidad Politecnica de Valencia</div>
 	            </div>
 	            <div class="bottom">
 	                <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
@@ -187,9 +177,9 @@
 	              <div class="title">
 	                  <a target="_blank" href="" class="card_title">Yishun Dai</a>
 	              </div>
-	              <div class="desc1">Miembro de marketing y diseñador</div>
-	              <div class="desc1">Escuela: ETSID</div>
-	              <div class="desc1">Universidad Politecnica de Valencia</div>
+	              <div class="desc1" data-translate="team_marketing">Miembro de marketing y diseñador</div>
+	              <div class="desc1" data-translate="team_school_ETSID">Escuela: ETSID</div>
+	              <div class="desc1" data-translate="team_university">Universidad Politecnica de Valencia</div>
 	          </div>
 	          <div class="bottom">
 	              <a href="" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
@@ -197,322 +187,7 @@
 	       </div>
 	    </div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-	electronics
-	<div class="container-fluid" id="electronics" data-aos="fade-up">
-		<div class="row">
-				<h1 class="title_style">Electrónica</h1>
-		</div>
-		<div class="container">
-			<div class="row">
-			member 1
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	      		<div class="card hovercard card_style">
-	              <div class="cardheader_e">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/javi.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Javier Collado      Garcia</a>
-	                  </div>
-	                  <div class="desc">Miembro de electronica</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-             	<div class="bottom" >
-                  <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn_linkedin" ><h5>LinkedIn</h5></a>
-              </div>
-          </div>
-      </div>
-      member 2
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_e">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/vlad.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Vladyslav Mazurkevych</a>
-	                  </div>
-	                  <div class="desc">Programador de electronica</div>
-	                  <div class="desc">Escuela: ETSINF</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	              <div class="bottom">
-	                  <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	           </div>
-        	</div>
-      </div>
-      <br>
-  	</div>
-  </div>
-  	Marketing
-
-  <div class="container-fluid" id="marketing" data-aos="fade-up">
-		<div class="row">
-				<h1 class="title_style">Marketing</h1>
-		</div>
-		<div class="container">
-			<div class="row">
-			
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard card_style1">
-              <div class="cardheader_m">
-              </div>
-              <div class="avatar">
-                  <img alt="" src="img/disciplines/electronics/javi.png">
-              </div>
-              <div class="info card_h">
-                  <div class="title">
-                      <a target="_blank" href="" class="card_title">Javier Collado      Garcia</a>
-                  </div>
-                  <div class="desc">Miembro de marketing</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
-              </div>
-             	<div class="bottom">
-                  <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-              </div>
-          </div>
-      </div>
-      
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard card_style">
-              <div class="cardheader_m">
-              </div>
-              <div class="avatar">
-                  <img alt="" src="img/disciplines/electronics/vlad.png">
-              </div>
-              <div class="info card_h">
-                  <div class="title">
-                      <a target="_blank" href="" class="card_title">Vladyslav Mazurkevych</a>
-                  </div>
-                  <div class="desc">Responsable de marketing</div>
-                  <div class="desc">Escuela: ETSINF</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
-              </div>
-              <div class="bottom">
-                  <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-              </div>
-           </div>
-        </div>
-        
-		<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	      <div class="card hovercard card_style">
-	          <div class="cardheader_m">
-	          </div>
-	          <div class="avatar">
-	              <img alt="" src="img/disciplines/marketing/david.png">
-	          </div>
-	          <div class="info card_h">
-	              <div class="title">
-	                  <a target="_blank" href="" class="card_title">Yishun Dai</a>
-	              </div>
-	              <div class="desc">Miembro de marketing y diseñador</div>
-	              <div class="desc">Escuela: ETSID</div>
-	              <div class="desc">Universidad Politecnica de Valencia</div>
-	          </div>
-	          <div class="bottom">
-	              <a href="" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	          </div>
-	       </div>
-	    </div>
-      </div>
-      <br>
-  	</div>
-  </div>
-		Structure
-	<div class="container-fluid" id="structure" data-aos="fade-up">
-			<div class="row">
-					<h1 class="title_style">Estructuras</h1>
-			</div>
-			<div class="container">
-				<div class="row">
-				
-				<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_s">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/javi.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Javier Collado      Garcia</a>
-	                  </div>
-	                  <div class="desc">Miembro de estructuras</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	             	<div class="bottom">
-	                  <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	          </div>
-	      </div>
-	      
-				<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_s">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/vlad.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Vladyslav Mazurkevych</a>
-	                  </div>
-	                  <div class="desc">Miembro de estructuras</div>
-	                  <div class="desc">Escuela: ETSINF</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	              <div class="bottom">
-	                  <a href="https://www.linkedin.com/in/vladyslav-m-78b6a6161" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	           </div>
-	        </div>
-
-	        
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_s">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/motor/JoseJuanFernandez.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">José Juan Fernandez</a>
-	                  </div>
-	                  <div class="desc">Miembro de estructuras</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	              <div class="bottom">
-	                  <a href="https://www.linkedin.com/in/josé-juan-fernández-pazos-b410a617a" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	           </div>
-	        </div>
-
-	        <div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_s">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/adrian.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Adrian Leordean</a>
-	                  </div>
-	                  <div class="desc">Miembro de estructuras</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	              <div class="bottom">
-	                  <a href="linkedin.com/in/cosmin-adrian-leordean-06b0aa17a" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	           </div>
-	        </div>
-	      </div>
-	      <br>
-  	</div>
-  </div>
-  	motor-
-  <div class="container-fluid" id="motor" data-aos="fade-up">
-		<div class="row">
-				<h1 class="title_style">Motor & Batería</h1>
-		</div>
-		<div class="container">
-			<div class="row">
-	
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard card_style">
-              <div class="cardheader_b">
-              </div>
-              <div class="avatar">
-                  <img alt="" src="img/disciplines/electronics/javi.png">
-              </div>
-              <div class="info card_h">
-                  <div class="title">
-                      <a target="_blank" href="" class="card_title">Javier Collado      Garcia</a>
-                  </div>
-                  <div class="desc">Miembro de motor</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
-              </div>
-             	<div class="bottom">
-                  <a href="https://www.linkedin.com/in/javier-collado-garcía-098a34164" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-              </div>
-          </div>
-      </div>
-
-      
-			<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-          <div class="card hovercard card_style">
-              <div class="cardheader_b">
-              </div>
-              <div class="avatar">
-                  <img alt="" src="img/disciplines/motor/JoseJuanFernandez.png">
-              </div>
-              <div class="info card_h">
-                  <div class="title">
-                      <a target="_blank" href="" class="card_title">José Juan Fernandez</a>
-                  </div>
-                  <div class="desc">Miembro de motor</div>
-                  <div class="desc">Escuela: ETSID</div>
-                  <div class="desc">Universidad Politecnica de Valencia</div>
-              </div>
-              <div class="bottom">
-                  <a href="https://www.linkedin.com/in/josé-juan-fernández-pazos-b410a617a" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-              </div>
-           </div>
-        </div>
-      	
-      	<div class="col-lg-3 col-sm-6" data-aos="flip-right">
-	          <div class="card hovercard card_style">
-	              <div class="cardheader_s">
-	              </div>
-	              <div class="avatar">
-	                  <img alt="" src="img/disciplines/electronics/adrian.png">
-	              </div>
-	              <div class="info card_h">
-	                  <div class="title">
-	                      <a target="_blank" href="" class="card_title">Adrian Leordean</a>
-	                  </div>
-	                  <div class="desc">Miembro de motor</div>
-	                  <div class="desc">Escuela: ETSID</div>
-	                  <div class="desc">Universidad Politecnica de Valencia</div>
-	              </div>
-	              <div class="bottom">
-	                  <a href="linkedin.com/in/cosmin-adrian-leordean-06b0aa17a" title="LinkedIn" class="btn_linkedin"><h5>LinkedIn</h5></a>
-	              </div>
-	           </div>
-	        </div>
-       
-  	</div>
-  	<br>
-  </div>
-</div>
-MEMBERS END-->
+	<!--Members END-->
 
 	<!--FOOTER-->
   <footer>
@@ -537,12 +212,12 @@ MEMBERS END-->
        </div>
        <br>
        <div class="row">
-       		<div class="col-xs-12 col-sm-12">
-       			 <h3 align="center" class="footer_text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
-       		</div>
-       </div> 
-      </div>
-  </footer>
+			<div class="col-xs-12 col-sm-12">
+				<h3 class="footer_text" data-translate="footer-text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
+			</div>
+		</div> 
+    </div>
+</footer>
   <!--/.FOOTER-END-->
   <!--callout message
   <div class="callout" style="z-index: 999;">
@@ -629,6 +304,57 @@ MEMBERS END-->
 			
 		}
 		navSlide();
+	</script>
+
+	<!--Lang-->
+	<script>
+		// Lang info
+		var langs = ['en', 'es','vlc']
+		var lang_index = 0
+		
+		// The page will appear in english
+		var current_lang = langs[lang_index]
+
+
+		window.change_lang = function() {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			lang_index = ++lang_index % 2
+			current_lang = langs[lang_index]
+			document.getElementById('nav-but').innerHTML = past_lang.toUpperCase()
+			translate()
+		}
+
+		window.change_to = function(lang) {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			if('en' == lang){
+				lang_index = 0
+			}else if('es' == lang){
+				lang_index = 1
+			}else if('vlc' == lang){
+				lang_index = 2
+			}else{
+				lang_index = 0
+			}
+			current_lang = lang
+			translate()
+		}
+
+		function translate() {
+			$("[data-translate]").each(function(){
+				var key = $(this).data('translate')
+				$(this).html(dictionary[key][current_lang] || "N/A")
+			});
+		}
+
+		translate();
+	</script>
+	<script>
+		/**link to id**/
+		window.addEventListener("hashchange", function () {
+			window.scrollTo(window.scrollX, window.scrollY - 80);
+		});
 	</script>
 </body>
 </html>

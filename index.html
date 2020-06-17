@@ -19,8 +19,6 @@
 	<!--///////////FONTS END///////////////-->
 
 	<!--/////////////CSS///////////////////-->
-	<link rel="stylesheet" type="text/css" href="css/navbar_style.css">
-	<link rel="stylesheet" type="text/css" href="fonts/fuentes.css">
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -42,42 +40,33 @@
 	<script src="js/jquery.flexslider.js"></script>
 	<!--Calendar styles end-->
 	<script type="text/javascript" src="js/window-scroll.js"></script>
+	<script src="./js/lang.js" type="text/javascript" charset="utf-8"></script>
 
-	<script type="text/javascript">
-		/*function myFunction() {
-		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		    document.getElementById("navbarf").className = "barra";
-		  } else {
-		    document.getElementById("navbarf").className = "";
-		  }
-		}*/
-	</script>
 	<link rel="stylesheet" href="nav_style.css">
-  <script src="sticky.js"></script>
 	<!--////////////JS END/////////////-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="sticky" id="navBar">
+	<nav class="sticky sticky_plus" id="navBar">
 		<div class="logo">
 			<!--<img src="img/logo/logo2_new.png" alt="Wattmobile" style="height: 40px; width: 30px;"></img>-->
 			<h4 class="wattmobile_font"><a href="#home">Wattmobile</a></h4>
 		</div>
 		<ul class="nav-links">
-			<li><a href="#home">Principal</a></li>
-			<li><a href="./about_us.html#home">Nosotros</a></li>
-			<li><a href="#contact">Contacto</a></li>
-			<li><a href="#sponsors">Patrocinio</a></li>
+			<li><a href="#home" data-translate="bar-home">Principal</a></li>
+			<li><a href="about_us.html#home#home" data-translate="bar-about-us">Nosotros</a></li>
+			<li><a href="#contact" data-translate="bar-contact">Contacto</a></li>
+			<li><a href="#sponsors" data-translate="bar-sponsors">Patrocinio</a></li>
 			<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
 		          ES
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-		          <a class="dropdown-item" href="en_index.html">EN</a>
-		          <a class="dropdown-item" href="ca_index.html">VLC</a>	
+					<a class="dropdown-item" onclick="change_to('es');">ES</a>
+		        	<a class="dropdown-item" onclick="change_to('en');">EN</a>
+		        	<a class="dropdown-item" onclick="change_to('vlc');">VLC</a>	
 		        </div>          
 			</li>
-			<li></li>
 		</ul>
 		<div class="burger">
 			<div class="lin1"></div>
@@ -121,7 +110,7 @@
 					</h3>
 				</div>
 				<div class="col-sm-3 col-xs-12 flexcol">
-					<h3 class="d1">
+					<h3 class="d1" data-translate="about-power">
 						Potencia
 					</h3>
 					<h3 class="d1">
@@ -132,7 +121,7 @@
 					</h3>
 				</div>
 				<div class="col-sm-3 col-xs-12 flexcol">
-					<h3 class="d1">
+					<h3 class="d1" data-translate="about-max-speed">
 						Velocidad Máx.
 					</h3>
 					<h3 class="d1">
@@ -140,7 +129,7 @@
 					</h3>
 				</div>
 				<div class="col-sm-3 col-xs-12 flexcol">
-					<h3 class="d1">
+					<h3 class="d1" data-translate="about-torque">
 						Torque Motor
 					</h3>
 					<h3 class="d1">
@@ -152,7 +141,7 @@
 	</div>
 	<!--DESCRIPTION-->
 	<div class="container-fluid" id="desc" data-aos="fade-left">
-		<div class="desc">
+		<div class="desc" data-translate="descript">
 			Wattmobile UPV es el primer vehiculo ( 100% ) <br>
 			eléctrico de competición en España. Con ello, <br>
 			pretende introducir las nuevas tecnologías <br>
@@ -165,7 +154,7 @@
 			
 		</div>
 		<div class="equipo col-sm-5 col-xs-12">
-			<p style="text-align: justify;color: white; left: 50px;">
+			<p style="text-align: justify;color: white; left: 50px;" data-translate="desc-team">
 				Un proyecto fundamentado en el aprendizaje continuo y la puesta en práctica de los conceptos teóricos que adquirimos en la Universidad. Propulsado por las bulliciosas mentes de algunos estudiantes de la Universitat Politècnica de València, Wattmobile UPV toma desde sus raíces un compromiso determinante con uno de los problemas contemporáneos más trascendentales, el calentamiento global producido por la incesante emisión de gases contaminantes a la atmósfera.
 				<br><br>
 				Es por esto que en Wattmobile UPV apostamos por la conversión de vehículos de combustión en eléctricos, y es nuestro compromiso mostrar que a base de trabajo en equipo e implicación podemos ser capaces de dar forma a un prototipo competitivo, capaz de batirse al más alto nivel con emisiones 0.
@@ -181,7 +170,7 @@
 
 		</div>
 		<div class="desc_motor col-sm-7 col-xs-12">
-			<p style="text-align: justify;color: white; left: 50px;">
+			<p style="text-align: justify;color: white; left: 50px;" data-translate="motor">
 				Empleamos un motor síncrono de flujo axial de 110 KW, el cual <br>
 				nos permite alcanzar los 5500 rpm. La gran ventaja de este motor <br>
 				es su relación peso poténcia. Con apenas 12 kg nos proporciona <br>
@@ -196,7 +185,7 @@
 
 		</div>
 		<div class="bateria col-sm-3 col-xs-12">
-			<p style="text-align: justify;color: white; left: 50px;">
+			<p style="text-align: justify;color: white; left: 50px;" data-translate="battery">
 				La batería es el centro de nuestro coche.
 				Está diseñada y montada desde cero en las 
 				instalaciones de la universidad. Con ella 
@@ -211,82 +200,11 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-	<!--
-	<div class="container-fluid" id="about" data-aos="fade-up">
-			<div class="row">
-					<h1 class="title_style" >Nosotros</h1>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-7">
-							GROUP
-							<div class="container-fluid">
-								EECTRONICS
-								<div class="row group_about_style div_rounded div_group_style" data-aos="fade-right" onclick="location.href='about_us.html#electronics';" id="pointer">
-									<div class="col-xs-12 col-sm-1">
-											<center><img src="img/icons/electronics2.png" class="image-cropper image_dimensions"></center>
-									</div>
-									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Electrónica</p></center>
-									</div>
-								</div>
-								MARKETING
-								<div class="row group_about_style div_rounded div_group_style" data-aos="fade-right" onclick="location.href='about_us.html#marketing';" id="pointer">
-									<div class="col-xs-12 col-sm-1">
-											<center><img src="img/icons/management.png" class="image-cropper image_dimensions" ></center>
-									</div>
-									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Marketing</p></center>
-									</div>
-								</div>
-								STRUCTURE
-								<div class="row group_about_style div_rounded div_group_style" data-aos="fade-right" onclick="location.href='about_us.html#structure';" id="pointer">
-									<div class="col-xs-12 col-sm-1">
-											<center><img src="img/icons/design.png" class="image-cropper image_dimensions"></center>
-									</div>
-									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Estructura</p></center>
-									</div>
-								</div>
-								-MOTOR AND BATTERY-->
-								<!--<div class="row group_about_style div_rounded div_group_style" data-aos="fade-right" onclick="location.href='about_us.html#motor';" id="pointer">
-									<div class="col-xs-12 col-sm-1">
-											<center><img src="img/icons/engine.png" class="image-cropper image_dimensions" ></center>
-									</div>
-									<div class="col-xs-12 col-sm-8">
-											<center><p class="group_style">Motor & Bateria</p></center>
-									</div>
-								</div>
-								<br><br><br>
-							</div>
-							--GROUPS END-->
-				<!--</div>
-				<div class="col-xs-12 col-sm-5 about_us_style_description" data-aos="fade-up">
-					<h1 class="subtitle_style">Descripción general</h1>
-					<p style="text-align: justify;color: white;">
-							Un proyecto fundamentado en el aprendizaje continuo y la puesta en práctica de los conceptos teóricos que adquirimos en la Universidad. Propulsado por las bulliciosas mentes de algunos estudiantes de la Universitat Politècnica de València, Wattmobile UPV toma desde sus raíces un compromiso determinante con uno de los problemas contemporáneos más trascendentales, el calentamiento global producido por la incesante emisión de gases contaminantes a la atmósfera.
-							<br><br>
-							Es por esto que en Wattmobile UPV apostamos por la conversión de vehículos de combustión en eléctricos, y es nuestro compromiso mostrar que a base de trabajo en equipo e implicación podemos ser capaces de dar forma a un prototipo competitivo, capaz de batirse al más alto nivel con emisiones 0.
-					</p>
-				</div>
-			</div>
-			<br>
-	</div>
-	-->
-	<!--ABOUT US END-->
-	<!---->
-	
-
 	<!--CONTACT-->
 	<div class="container-fluid" id="contact">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12" >
-					<h1 class="title_style">Contacto</h1>
+					<h1 class="title_style" data-translate="contact">Contacto</h1>
 				</div>
 			</div>
 			<!--CONTACT DESCRIPTION-->
@@ -299,70 +217,8 @@
 						<center><img src="./img/icons/email1.png" alt="mail to" class="mail"></center>
 						<center><a href="mailto:wattmobileupv@gmail.com" target="_blank" class="contact_style_text">wattmobileupv@gmail.com</a></center><br>
 					</a>
-	              	<!--<section class="form-dark mb-5">
-
-					  Form without header
-					    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-
-					      Header
-					      <div class="text-center">
-					        <h3 class="white-text mb-5 mt-4 font-weight-bold text-uppercase"><strong>Contacto</strong></h3>
-					      </div>
-
-					      <div class="md-form">
-					      	<label for="form100">Nombre</label>
-					        <input type="text" id="form100" class="form-control">
-					      </div>
-
-					      <div class="md-form">
-					      	<label for="form101">Correo</label>
-					        <input type="text" id="form101" class="form-control">
-					      </div>
-
-					      <div class="md-form">
-					      	<label for="form102">Subject</label>
-					        <input type="text" id="form102" class="form-control">
-					      </div>
-
-					      <div class="md-form">
-					      	<label for="form103">Tu mensaje</label>
-					        <textarea id="form103" class="md-textarea form-control" rows="5"></textarea>
-					      </div>
-
-					      Grid row
-					      <div class="row d-flex align-items-center">
-
-					        Grid column
-					        <div class="text-center col-md-12 mt-3 mb-2">
-					          <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" style="background-color: #44DAD2;">Enviar</button>
-					        </div>
-					        Grid column
-					      </div>
-					      Grid row
-
-					    </div>
-					/Form without header
-					</section>-->
 				</div>
 			</div>
-			<!--SOCIAL NETWORKS
-			<div class="row">
-            <ul class="socials">
-              <li class="facebook">
-                <a href="https://es-es.facebook.com/Wattmobile-UPV-750063795162288/" data-hover="Facebook">Facebook</a>
-              </li>
-              <li class="instagram">
-                <a href="https://www.instagram.com/wattmobileupv/" data-hover="Instagram">Instagram</a>
-              </li>
-             <li class="twitter">
-                <a href="#" data-hover="Twitter">Twitter</a>
-              </li>-->
-              <!--<li class="youtube">
-                <a href="#" data-hover="Youtube">Youtube</a>
-              </li>-->
-            <!--</ul>
-			</div>
-			SOCIAL NETWORKS END-->
 	</div>
 	<!--CONTACT END-->
 
@@ -370,7 +226,7 @@
 	<div class="container-fluid" id="sponsors" style="z-index: 5;" data-aos="fade-up">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
-						<h1 style="color: white!important;" class="title_style">Sponsors</h1>			
+						<h1 style="color: white!important;" class="title_style" data-translate="sponsors">Sponsors</h1>			
 				</div>
 			</div>
 			<div id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel"  data-interval="5000">
@@ -406,13 +262,13 @@
 
 	<!--GALLERY-->
 	<div class="container-fluid" id="gallery" style="z-index: 5;" data-aos="fade-up">
-			<div class="row contained justify-content-center" style="top: 40%!important;position: relative;">
-				<div class="col-xs-12">
-						<a href="galeria.html" class="gallery_button" style="color: white">Galeria</a>
-				</div>
+		<div class="row contained justify-content-center" style="top: 40%!important;position: relative;">
+			<div class="col-xs-12">
+					<a href="gallery.html" class="gallery_button" style="color: white" data-translate="gallery">Galeria</a>
 			</div>
-			<br>
-			<br>
+		</div>
+		<br>
+		<br>
 	</div>
 	<!--GALLERY END-->
 
@@ -514,10 +370,10 @@
        <br>
        <div class="row">
        		<div class="col-xs-12 col-sm-12">
-       			 <h3 align="center" class="footer_text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
+       			 <h3 class="footer_text" data-translate="footer-text">©2020 WATTMOBILE UPV. Todos los derechos reservados.</h3>
        		</div>
        </div> 
-      </div>
+    </div>
   </footer>
   <!--FOOTER-END-->
 
@@ -608,6 +464,57 @@
 		}
 
 		navSlide();
+	</script>
+
+	<!--Lang-->
+	<script>
+		// Lang info
+		var langs = ['en', 'es','vlc']
+		var lang_index = 0
+		
+		// The page will appear in english
+		var current_lang = langs[lang_index]
+
+
+		window.change_lang = function() {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			lang_index = ++lang_index % 2
+			current_lang = langs[lang_index]
+			document.getElementById('nav-but').innerHTML = past_lang.toUpperCase()
+			translate()
+		}
+
+		window.change_to = function(lang) {
+			// Selecting the next lang
+			past_lang = langs[lang_index]
+			if('en' == lang){
+				lang_index = 0
+			}else if('es' == lang){
+				lang_index = 1
+			}else if('vlc' == lang){
+				lang_index = 2
+			}else{
+				lang_index = 0
+			}
+			current_lang = lang
+			translate()
+		}
+
+		function translate() {
+			$("[data-translate]").each(function(){
+				var key = $(this).data('translate')
+				$(this).html(dictionary[key][current_lang] || "N/A")
+			});
+		}
+
+		translate();
+	</script>
+	<script>
+		/**link to id**/
+		window.addEventListener("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 80);
+        });
 	</script>
 </body>
 </html>
