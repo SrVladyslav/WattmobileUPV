@@ -129,27 +129,27 @@ var dictionary = {
     },
     // Cards
     'team_electronics':{
-		'es':'Miembro de electronica',
+		'es':'<b>Miembro de: </b><br> ➤ Electronica',
         'en':'Electronics member',
         'vlc':"Membre d'electronica"
     },
     'team_marketing':{
-		'es':'Miembro de marketing y diseñador',
+		'es':'<b>Miembro de: </b><br> ➤ Marketing<br> ➤ Diseño',
         'en':'Marketing member and designer',
         'vlc':'Membre de marketing y disseny'
     },
     'jose-juan':{
-		'es':'Miembro de: <br> - Estructuras <br> - Electronica <br> - Motor',
+        'es':'<b>Miembro de: </b><br> ➤ Estructuras <br> ➤ Electrónica <br>➤ Motor',
         'en':'Member of: <br> - Structures <br> - Electronics <br> -Motor',
         'vlc':'Membre de: <br> - Estructures <br> - Electrónica <br> - Motor'
     },
     'team_school_ETSID':{
-		'es':'Escuela: ETSID',
+		'es':'<b>Escuela:</b> ETSID',
         'en':'School: ETSID',
         'vlc':'Escola: ETSID'
     },
     'team_school_ETSINF':{
-		'es':'Escuela: ETSINF',
+		'es':'<b>Escuela: </b> ETSINF',
         'en':'School: ETSINF',
         'vlc':'Escola: ETSINF'
     },
@@ -159,7 +159,7 @@ var dictionary = {
         'vlc':'Universitat Politecnica de Valencia'
     },
     'team_programmer':{
-		'es':'Programador y miembro de electronica',
+		'es':'<b>Miembro de: </b><br> ➤ Marketing<br> ➤ Programador',
         'en':'Programmer and electronics member',
         'vlc':"Programador y membre d'electronica"
     },
